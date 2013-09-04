@@ -1,0 +1,12 @@
+<f:layout name="MainLayout" />
+<f:section name="content">
+  <div id="content-helpers">
+  		Hjælpefunktioner!
+  </div>
+  <div id="main">
+    {content -> f:format.raw()}
+  </div>
+  <div id="secondary">
+  	<f:cObject typoscriptObjectPath="lib.secondary"/>
+  </div>
+</f:section>

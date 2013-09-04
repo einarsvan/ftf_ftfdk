@@ -1,1 +1,7 @@
-Constants.txt
+##
+# Constants for a this theme
+##
+
+# Set the domain
+domain = http://www.ftf.dk/
+
