@@ -1,0 +1,12 @@
+##
+# Include Typoscript files
+##
+
+# Main template setup
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Setup/Config.ts">
+
+# Page setup
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_setup/Resources/Private/TypoScript/Setup/Page.ts">
+
+# Meta tags
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_setup/Resources/Private/TypoScript/Setup/MetaTags.ts">
