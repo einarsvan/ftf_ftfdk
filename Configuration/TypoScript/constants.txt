@@ -3,5 +3,6 @@
 ##
 
 # Set the domain
-domain = http://www.ftf.dk/
+#domain = http://www.ftf.dk/
+domain = http://ftf-udvikling.ftf.net/
 

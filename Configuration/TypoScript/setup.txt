@@ -5,6 +5,13 @@
 # Main template setup
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Setup/Page.ts">
 
+# Stylesheets
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Setup/Stylesheets.ts">
+
+# Navigation / Menus
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Navigation/MainMenu.ts">
+
 # Content objects
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Content/Header.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Content/Footer.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Content/Secondary.ts">

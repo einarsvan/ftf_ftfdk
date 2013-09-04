@@ -1,8 +1,8 @@
-<f:cObject typoscriptObjectPath="lib.content.topbanner"/>
+<div class="topbanner">
+	{banner -> f:format.raw()}
+</div>
 <f:cObject typoscriptObjectPath="lib.content.header"/>
 <div class="content">
-	<div class="container">	
-		<f:render section="content" />
-	</div>
+	<f:render section="content" />
 </div>
 <f:cObject typoscriptObjectPath="lib.content.footer"/>

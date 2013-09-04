@@ -1,0 +1,1066 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Fonts from fonts.com
+   
+   Light: 	Diverda Serif W01 Light
+   Regular:	DiverdaSerifW01-Regular
+   Black:		Diverda Serif W01 Black
+   
+   Light:		Proxima N W01 Light
+   Regular: Proxima N W01 Reg
+   Semibold:Proxima N W01 Smbd
+   
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}/*  *behavior: url(/fileadmin/scripts/boxsizing.htc);} */ /* Hack to get IE7 to work with box-sizing */
+body {font: 15px/1.3333 "Proxima N W01 Reg", Arial, sans-serif; color: #2b2b2b; margin: 0;}
+
+/* !General html setup */
+h1 {font: 100px/95px Georgia, "Times New Roman", serif;} /* 100px */
+h2 {font: 2.8em/1.0476 Georgia, "Times New Roman", serif; margin: 0 0 0.5em;} /* 42px / 48px */
+h3 {font: 43px/42px Georgia, "Times New Roman", serif;} /* 42px */
+h4,h5,h6 {font: 22px/21px Georgia, "Times New Roman", serif;} /* 22px */
+
+a {text-decoration: none; color: #15d1e8;}
+a:hover {text-decoration: underline;}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #000;}
+
+img {max-width: 100%;}
+
+span.sectioncolor {color: #28c0da;}
+span.pref::after {content: " |"; color: #2b2b2b;}
+.black span.pref::after,
+.blue span.pref::after,
+.red span.pref::after,
+.green span.pref::after {color: #fff;}
+
+.subheader p {color: #333;}
+
+.csc-frame-rulerBefore {border-top: 1px solid #ccc;}
+
+
+/**
+ * Layout
+ * Grid, 1000px, 20px gutter, 65px width of columns
+ **/
+
+#main .row {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e0e0e0;}
+
+#main.kongres .kongres-for .row,
+#main.kongres .kongres-under .row,
+#main.kongres .kongres-efter .row {margin-bottom: 20px; padding-bottom: 0; border-bottom: 0;}
+
+#main .row .row {margin: 0; padding: 0; border: 0;}
+.col {float:left; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; 
+	background-clip: padding-box !important; margin-left: 2%; padding: 0; vertical-align: top;}
+.row .col:first-child {margin-left:0;}
+
+.span_1 {width:6.5%;}
+.span_2 {width:15.0%;}
+.span_3 {width:23.5%;}
+.span_4 {width:32.0%;}
+.span_5 {width:40.5%;}
+.span_6 {width:49.0%;}
+.span_7 {width:57.5%;}
+.span_8 {width:66.0%;}
+.span_9 {width:74.5%;}
+.span_10 {width:83.0%;}
+.span_11 {width:91.5%;}
+.span_12 {margin-left:0; width:100%;}
+
+.container {position: relative; margin: 0 auto; max-width: 1000px;}
+
+
+/* Header */
+header {margin-bottom: 20px;}
+
+/* Logo */
+.logo {float: left; width: 70%; margin: 20px 0;}
+.logo h1 {font-family: "Proxima N W01 Reg", sans-serif; font-size: 1em; line-height: 1; margin: 0; padding: 0; font-weight: normal; color: grey;}
+.logo span {display: inline-block; width: 103px; height: 36px; margin-right: 20px; background: url(../images/logo.png) 0 0 no-repeat;}
+.logo a {color: grey;}
+
+/* Search */
+/* .search {position: absolute; top: 0; right: 0; width: 23%;} */
+.search {float: right; margin-top: 20px; width: 23%;}
+.search form {position: relative;}
+.search input[type="text"] {position: absolute; top: 0; right: 0; width: 100%; padding: 5px 45px 5px 5px; border: 1px solid #d2d2d2; border-radius: 0;}
+.search button {position: absolute; top: 6px; right: 12px; height: 17px; width: 27px; border: 1px solid #d2d2d2; border-width: 0 0 0 1px; 
+	background: #fff url(../images/icons.png) 10px -937px no-repeat;}
+
+/* Mainmenu */
+.mainmenu a {color: #000; text-decoration: none; font-size: 0.9333em;} /* 14px */
+
+.mainmenu .lvl1 {display: inline-table; margin: 0; padding: 0 0 0 2%; width: 100%; border-bottom: 3px solid #2cd4e8;}
+.mainmenu .lvl1 li {display: table-cell; text-align: center;}
+.mainmenu .lvl1 a {display: block; margin: 0; padding: 3px 0 2px; text-transform: uppercase; margin-bottom: 3px;}
+.mainmenu .lvl1 a:hover {margin-bottom: -3px; border-bottom: 6px solid #fff;}
+.mainmenu .lvl1 li.act a {background: #2cd4e8; color: #fff; border: 6px solid #fff; border-top: 0; margin-bottom: -3px; text-decoration: none;}
+
+.mainmenu .lvl2 {margin: 3px 0 0; padding: 0 0 0 5px; background: #444;}
+.mainmenu .lvl2 li {display: inline;}
+.mainmenu .lvl2 a {display: inline-block; padding: 10px 0 8px;}
+.mainmenu .lvl2 span {display: inline-block; padding: 2px 15px 2px; color: #fff; border-right: 1px solid #696969;}
+.mainmenu .lvl2 li.act a,
+.mainmenu .lvl2 li a:hover {background: #171717; margin-left: -1px; border-left: 1px solid #171717;}
+.mainmenu .lvl2 li.act span,
+.mainmenu .lvl2 li a:hover span {border-color: #171717;}
+.mainmenu .lvl2 li a:hover span {text-decoration: underline;}
+.mainmenu .lvl2 li:last-child span {border: 0;}
+
+.mainmenu .lvl3 {margin: 0; padding: 0; border-bottom: 1px solid #2cd4e8;}
+.mainmenu .lvl3 li {display: inline;}
+.mainmenu .lvl3 a {display: inline-block; margin: 0 0 3px 0; padding: 8px 0 2px; font-size: 12px; color: #4e4e4e;}
+.mainmenu .lvl3 li:first-child a {padding-left: 1px;}
+.mainmenu .lvl3 li.act a {border-bottom: 3px solid #2cd4e8; margin-bottom: 0;}
+.mainmenu .lvl3 span {padding: 2px 8px 2px; border-right: 1px solid #2cd4e8;}
+.mainmenu .lvl3 li:last-child span {border: 0;}
+
+#bluegreen .mainmenu .lvl1,
+#bluegreen .mainmenu .lvl3,
+#bluegreen .mainmenu .lvl3 li.act a,
+#bluegreen .mainmenu .lvl3 span {border-color: #6ccfb2;}
+#bluegreen .mainmenu .lvl1 li.act a {background: #6ccfb2;}
+
+#orange .mainmenu .lvl1,
+#orange .mainmenu .lvl3,
+#orange .mainmenu .lvl3 li.act a,
+#orange .mainmenu .lvl3 span {border-color: #ff862b;}
+#orange .mainmenu .lvl1 li.act a {background: #ff862b;}
+
+#blue .mainmenu .lvl1,
+#blue .mainmenu .lvl3,
+#blue .mainmenu .lvl3 li.act a,
+#blue .mainmenu .lvl3 span {border-color: #13a7d7;}
+#blue .mainmenu .lvl1 li.act a {background: #13a7d7;}
+
+#green .mainmenu .lvl1,
+#green .mainmenu .lvl3,
+#green .mainmenu .lvl3 li.act a,
+#green .mainmenu .lvl3 span {border-color: #84c708;}
+#green .mainmenu .lvl1 li.act a {background: #84c708;}
+
+#red .mainmenu .lvl1,
+#red .mainmenu .lvl3,
+#red .mainmenu .lvl3 li.act a,
+#red .mainmenu .lvl3 span {border-color: #fd5555;}
+#red .mainmenu .lvl1 li.act a {background: #fd5555;}
+
+#yellow .mainmenu .lvl1,
+#yellow .mainmenu .lvl3,
+#yellow .mainmenu .lvl3 li.act a,
+#yellow .mainmenu .lvl3 span {border-color: #ffbe00;}
+#yellow .mainmenu .lvl1 li.act a {background: #ffbe00;}
+
+#darkblue .mainmenu .lvl1,
+#darkblue .mainmenu .lvl3,
+#darkblue .mainmenu .lvl3 li.act a,
+#darkblue .mainmenu .lvl3 span {border-color: #6d9499;}
+#darkblue .mainmenu .lvl1 li.act a {background: #6d9499;}
+
+
+/* Footer */
+footer {padding-top: 50px; background: #282828; color: #fff; clear: both;}
+
+/* Slogan */
+.slogan {padding: 0 0 60px 0; font-size: 1.5333em; font-weight: 100; color: #15d1e8;} /* 23px */
+.slogan p {margin: 0 320px 0 0;}
+.slogan .big {font: bold 2em/1.2 Georgia, "Times New Roman", serif; color: #fff; margin: 0 130px 30px 0;} /* 46px */
+
+/* Contactpersons */
+.contact-person {background: #202020; padding: 20px 9%;}
+.contact-person img {float: left; margin-right: 20px;}
+.contact-person ul {margin: 0; padding: 0; list-style: none; font-size: 14px; line-height: 16px;}
+.contact-person p {margin: 0;}
+
+/* Address */
+address {border-top: 1px solid #333; margin-top: 35px; padding: 20px 0 80px;}
+address .logo {float: left; width: 75px; margin: 0 20px 0 0;}
+address p {float: left; display: inline-block; color: #777; font-style: normal; margin: 0; line-height: 30px;}
+
+address .socialmedia {float: right;}
+address .socialmedia ul {margin: 0; padding: 0; list-style: none;}
+address .socialmedia li {display: inline-block; margin-left: 15px;}
+address .socialmedia li a {display: block; line-height: 30px; background: url(../images/icons.png) 0 -715px no-repeat; width: 27px; height: 27px;}
+address .socialmedia a.twitter {background-position: 0 -863px;}
+address .socialmedia a.linkedin {background-position: 0 -789px;}
+address .socialmedia a.bentesblog {background-position: 0 -641px;}
+
+/* Backgrounds */
+.black {background: #1f2328; color: #fff;}
+.blue {background: #23b3d9; color: #fff;}
+.red {background: #e32c34; color: #fff;}
+.green {background: #269277; color: #fff;}
+.fb-blue {background: #051748; color: #fff;}
+.blue .subheader p {color: #fff;}
+.black a,
+.blue a,
+.red a,
+.green a,
+.bluegrey a,
+.fb-blue a {color: #fff !important;}
+.black p,
+.black .subheader p {color: #949494;}
+.red .subheader p,
+.green .subheader p {color: #fff;}
+.lightblue {background: #f0f4f6;}
+.grey {background: #dce3e6;}
+.bluegrey {background: #93a4b0;}
+.fb-blue p,
+.fb-blue .subheader p,
+.news-list .fb-blue .byline {color: #ededed;}
+
+/*
+.span_4 .news-list .red h2 a,
+.red h2 a {color: #fcbb48 !important;}
+*/
+
+.news-list .red .byline,
+.news-list .green .byline {color: #fff;}
+
+
+/**
+ * News lists
+ * Contains general news list. Lists are first styled generally, then according to placement and then according to bgcolor
+ **/
+
+
+/* GENERAL NEWS-LIST SETUP */
+.news-list .byline {display: block; font-size: 12px; color: #a2a2a2; margin: 0 0 10px;}
+.news-list .black .byline .cat,
+.news-list .red .byline .cat,
+.news-list .green .byline .cat,
+.news-list .lightblue .byline .cat,
+.news-list .bluegrey .byline .cat {color: #a2a2a2 !important;} /* For colors we must override with !important */
+.news-list img {margin-bottom: 10px;}
+
+.news-list h2 {color: #313131;}
+.span_8 .news-list h2 {margin: 15px 0 20px;}
+.span_8 .news-list .noimage h2 {font-size: 6em;} /* 90px */
+
+/* List-header */
+h2.list-header,
+.span_8 h2.list-header {font: normal 1.2667em/1 "Proxima N W01 Reg", Arial, sans-serif; text-transform: uppercase; margin: 0 0 20px; 
+	background: url(../images/header-lines.png) 0 2px repeat-x;} /* 19px */
+h2.list-header span {background: #fff; display: inline-block; padding-right: 30px;}
+/* Light blue list-header */
+.lightblue h2.list-header {background-image: url(../images/header-lines-greybg.png); margin-left: 20px; margin-right: 20px;}
+.lightblue h2.list-header span {background: #f0f4f6;}
+
+.news-list h3 {font: 1em/1.3333 "Proxima N W01 Reg", Arial, sans-serif; color: #000; margin: 0 0 10px;}
+
+.news-list span.date {font-size: 12px; line-height: 18px; color: #a2a2a2;}
+
+ul.related {list-style: none; margin: 10px 0 0; padding: 0;}
+ul.related a {display: block; color: #0f0f0f; padding: 3px 0 3px 2px; /* font-family: "Proxima N W01 Reg"; */}
+.span_8 ul.related li a {padding: 12px 0 11px 2px; border-bottom: 1px solid #3e3e3e;}
+.span_8 ul.related li:first-child a,
+.span_8 ul.related li:nth-child(2) a {font-size: 1.4667em; padding-bottom: 10px;} /* 22px */
+
+.span_8 .news-list .black ul.related li a {color: #fff;}
+
+.news-list .subheader p {margin: 0 0 10px;}
+#main .news-list .subheader p:last-child {margin: 0;}
+
+.news-list .noimage img,
+.news-list .nosub .subheader {display: none;}
+
+.news-list .black h2 {color: #fff;}
+
+
+/* NEWS_2 SPECIFIC */
+.news_2 .span_8 .news-list .content {padding: 0 30px 30px;}
+.news_2 .span_8 .news-list .standard .content {padding: 0;} /* Einar - Før, 50px i bunden */
+.news_2 .span_8 h2 {font-size: 3em;} /* 45px */
+
+
+/* SPAN_3 news-list */
+.span_3 .byline {margin-top: 0;}
+.span_3 .news-list h2 {font-size: 1.3333em; margin: 10px 0 20px;} /* 20px */
+/* .span_3 .news-list h2 a {color: #1ab0ca;} */
+.span_3 .news-list .noimage h2 a {color: #313131;}
+.span_3 .news-list .nosub h2 {font-size: 1.6667em;} /* 25px */
+.span_3 .news-list img {margin: 10px 0 0;}
+
+
+/* SPAN_4 news-list */
+.span_4 .news-list .news-item {border-bottom: 1px solid #e0e0e0; margin-bottom: 25px; padding-bottom: 25px;}
+.span_4 .news-list .news-item:last-child {margin-bottom: 0; border: 0; padding-bottom: 0;}
+
+.span_4 .news-list h2 {font-size: 1.4em; margin: 10px 0 20px;} /* 20px */
+
+.span_4 .news-list .noimage .byline {margin-top: 0;}
+.span_4 .news-list .noimage h2 {font-size: 2.6667em; margin: 10px 0 20px;} /* 40px */
+.span_4 .news-list .noimage h2 a {color: #313131;}
+
+
+/* SPAN_6 news-list */
+.span_6 .news-list h2 {font-size: 2.6667em; color: #313131; margin: 10px 0 20px;} /* 40px */
+.span_6 .news-list .noimage h2 {font-size: 3.3333em; margin-top: 20px;} /* 50px */
+.span_6 .news-list h2 a {color: #313131;}
+
+section .span_6 .news-list h3 {font: 2.6667em/1.1429 Georgia, "Times New Roman", sans-serif; color: #313131; margin: 10px 0 20px;} /* 40px */
+
+
+/* SPAN_12 news-list */
+.span_12 {margin-bottom: 20px;}
+.span_12 .news-list img {float: left; width: 58%; margin: 0;}
+.span_12 .news-list .content {float: right; width: 40.5%;}
+.span_12 h2 {font-size: 2.5333em;} /* 38px */
+
+
+/* BACKGROUND COLORS */
+
+/* Black */
+.black {padding: 30px;}
+.span_8 .black {padding: 0;}
+.span_4 .news-list .black:last-child {padding-bottom: 25px;}
+
+/* Blue */
+.blue {padding: 5px 30px 30px;}
+#blue .news-list .blue .byline .cat,
+.blue .byline {color: #333; margin-bottom: 25px;}
+.news-list .blue.noimage .byline {margin-top: 10px; font-weight: bold;}
+
+.blue .subheader {margin-bottom: 30px;}
+.blue ul.related {border-top: 1px solid #22a3ba;}
+.blue ul.related li {border-bottom: 1px solid #22a3ba;}
+.blue ul.related a {padding: 15px 0;}
+.blue a,
+.blue ul.related a,
+.blue span.sectioncolor {color: #fff;}
+.blue span.sectioncolor {font-weight: bold;}
+
+.span_4 .news-list .blue:last-child {padding-bottom: 25px;}
+
+/* Red and green */
+.red, .green {padding: 30px;}
+.span_8 .red, .span_8 .green {padding: 0;}
+.span_4 .news-list .red:last-child,
+.span_4 .news-list .green:last-child {padding-bottom: 25px;}
+
+/* Grey */
+.simplebox.grey {padding: 30px;}
+.simplebox.grey h2.list-header {background-image: url(../images/header-lines-softgreybg.png);}
+.simplebox.grey .list-header span {background: #dce3e6;}
+.simplebox.grey ul a {color: #000;}
+
+/* fb-blue Facebookish */
+.fb-blue {padding: 30px;}
+.span_8 .fb-blue {padding: 0;}
+.span_4 .news-list .fb-blue:last-child {padding-bottom: 25px;}
+
+
+/* LIST: headersonly */
+.headersonly .news-item,
+.span_4 .headersonly .news-item {padding: 10px 60px 0 30px; margin: 0; border-bottom: 1px solid #e5ecef; background: url(../images/list-arrow.png) 0 15px no-repeat;}
+.headersonly .news-item:last-child {border: 0;}
+
+
+/**
+ * News SINGLE
+ */
+
+article {padding: 1em; border: 1px solid #e0e0e0;}
+article.news-single h1 {font: 2.5em/1.0476 Georgia, "Times New Roman", serif; margin: 0 0 0.5em;}
+article.news-single .subheader {font: 1.15em/1.4 "Proxima N W01 Reg", Arial, sans-serif; color: #2b2b2b;}
+article.news-single .subheader img {vertical-align: top;}
+
+/**
+ * Sections
+ * Contains  some different sections of the front page
+ **/
+
+/* SECTION: Temaer */
+
+/* Tema 1 */
+#main .tema_1 .row:first-child {border: 0; margin: 0; padding: 0;}
+.tema_1 .span_12 .news-item {margin-top: 100px; max-width: 70%; margin-bottom: 60px;}
+.tema_1 .span_12 .news-list .content {float: none; width: auto;}
+.tema_1 .span_12 h2 {font-size: 3.4667em;} /*52px*/
+.tema_1 .span_12 .news-list .content h2,
+.tema_1 .span_12 .news-list .content li,
+.tema_1 .span_12 .news-list .content .subheader {background: #fff; background: rgba(255,255,255,0.9); margin: 0; display: inline-block; padding: 0 20px 10px 20px;}
+.tema_1 .span_12 .news-list .content h2 {padding-top: 15px; padding-bottom: 20px;}
+.tema_1 .span_12 .news-list .content li {padding-top: 10px; padding-bottom: 0;}
+.tema_1 .span_12 ul.related li a {padding: 2px 0 11px 2px; border-bottom: 1px solid #c0bfbe;}
+.tema_1 .span_12 ul.related li:first-child a,
+.tema_1 .span_12 ul.related li:nth-child(2) a {font-size: 1.4667em; padding-bottom: 10px; border: 0;} /* 22px */
+.tema_1 .span_12 .news-list .content li:last-child {padding-bottom: 15px;}
+.tema_1 .span_12 .news-list .content ul {margin: 0;}
+
+/* Tema 2 */
+.tema_2 .span_12 {margin-bottom: 0;}
+.tema_2 .span_12 .news-item {margin: 110px 0 20px 20px; max-width: 59%;}
+.tema_2 .span_12 .news-list .content {float: none; width: auto;}
+.tema_2 .span_12 h2 {font-size: 3em; margin-bottom: 20px;} /*45px*/
+.tema_2 .span_12 .news-list .content {background: #fff; background: rgba(255,255,255,0.9); margin: 0; padding: 30px 25px 20px;}
+.tema_2 .span_12 ul.related li a {padding: 12px 0 11px 2px; border-bottom: 1px solid #c0bfbe;}
+.tema_2 .span_12 ul.related li:last-child a {border-bottom: 0;}
+.tema_2 .span_12 ul.related li:first-child a,
+.tema_2 .span_12 ul.related li:nth-child(2) a {font-size: 1.4667em;} /* 22px */
+.tema_2 .span_12 .news-list .content ul {margin: 0;}
+
+.tema .span_12 .black,
+.tema .span_12 .blue,
+.tema .span_12 .red,
+.tema .span_12 .green,
+.tema .span_12 .fb-blue {background: transparent; padding: 0;}
+.tema .span_12 .black .content {background: #000; background: rgba(0,0,0,0.8);}
+.tema .span_12 .blue .content {background: #13a7d7; background: rgba(19,167,215,0.8);}
+.tema .span_12 .red .content {background: #fd5555; background: rgba(253,85,85,0.8);}
+.tema .span_12 .green .content {background: #84c708; background: rgba(132,199,8,0.8);}
+.tema .span_12 .fb-blue .content {background: #051748; background: rgba(5,23,72,0.8);}
+
+
+/* SECTION: Vidensbank */
+.vidensbank {position: relative; padding: 40px 0 20px; margin-bottom: 30px; clear: both;}
+#main .vidensbank .row {margin-bottom: 0; padding-bottom: 0; border: 0;}
+
+.vidensbank .news-list .byline {color: #7d7f80;}
+
+.vidensbank .col:first-child {padding-left: 20px;}
+.vidensbank .col:last-child {padding-right: 20px;}
+
+.vidensbank h3 {font: 2.5333em/1.1429 Georgia, "Times New Roman", serif;}
+
+.vidensbank .span_5 .news-item {border-bottom: 1px solid #ccd0d1; margin-bottom: 20px; padding-bottom: 20px;}
+.vidensbank .span_5 .news-item:last-child {border: 0;}
+.vidensbank .span_5 h3 {margin: 10px 0 15px;}
+
+.vidensbank .span_3 .byline {margin-top: 0;}
+.vidensbank .span_3 h3 {font-size: 22px; line-height: 25px;}
+.vidensbank .span_3 .news-list img {margin: 0 0 10px;}
+.vidensbank .span_3 .news-item {border-bottom: 1px solid #ccd0d1; margin-bottom: 20px; padding-bottom: 10px;}
+.vidensbank .span_3 .news-item:last-child {border: 0; margin: 0;}
+.vidensbank .span_3 .news-list h3 a {color: #000;}
+
+.vidensbank .span_4 h3 {font: 14px/16px "Proxima N W01 Reg", Arial, sans-serif; margin-bottom: 15px;}
+.vidensbank .span_4 .news-item {position: relative; min-height: 102px; border-bottom: 1px solid #ccd0d1; padding: 0 0 0 120px; margin-bottom: 15px;}
+.vidensbank .span_4 .news-item:last-child {border: 0;}
+.vidensbank .span_4 .news-item img {position: absolute; top: 0; left: 0; clip: rect(0 107px 100px 0);}
+.vidensbank .span_4 .byline {margin: 0 0 5px; padding-top: 10px;}
+.vidensbank .span_4 .noimage {min-height: 0; padding-left: 0;}
+
+
+/* Section: FTF Dokumentation */
+.dokumentation {margin-top: -30px; background: #1f2328;}
+#main .dokumentation .row {padding-bottom: 0; border-bottom: 0;}
+.dokumentation .span_3 {width: 25.5%; padding-top: 200px;}
+.dokumentation .span_9 {margin-left: 0; position: relative;}
+
+.dokumentation .span_3 .black {padding-top: 0; padding-bottom: 0;}
+.dokumentation .span_3 p {font-size: 1.6667em; line-height: 1; margin: 0;} /* 25px */
+
+.dokumentation .span_9 .content {position: absolute; bottom: 0; right: 0; width: 100%; height: 145px;
+	background: #000; background: rgba(0,0,0,0.6); padding: 10px 60px 0 20px;
+}
+.dokumentation .span_9 h2 {color: #fff; font-size: 2.2667em; margin: 0;}
+.dokumentation .span_9 a {color: #fff;}
+.dokumentation .byline {display: block; font-size: 13px; color: #a3aeb7; margin: 10px 0;}
+
+
+/* !SECTION: Bentes Blog */
+.bente {margin-bottom: 20px;}
+.bente .news-item {position: relative; margin-bottom: 20px;}
+.bente div.list-header {position: absolute; top: 16px; left: 0; font: 2em/1 Georgia, "Times New Roman", serif; color: #fff; border-bottom: 4px solid #fff; padding: 0 0 6px 20px;}
+.bente div.list-header span {font-family: "Diverda Serif W01 Light";}
+.bente .news-item img {margin: 0;}
+.bente .news-item .content {position: absolute; bottom: 0; left: 0; width: 100%; min-height: 140px; padding: 15px 5px 15px 20px; background: #333; background: rgba(0,0,0,0.6); color: #fff;}
+.bente .news-item .content h3 {font: 2.4em Georgia, "Times New Roman", serif;} /* 36px */
+.bente .news-item .content a {color: #fff;}
+
+/* LIST: bente-news-list */
+/* OBS. Fordi feedforward ikke kan templates får Bentes blog to stylings ... */
+.bente-news-list .news-item,
+.tx-feedforward-pi1 .listitem {padding-right: 20px;}
+.bente-news-list .news-item h3,
+.tx-feedforward-pi1 .listitem h3 {font: 1em/1.333 "Proxima N W01 Reg", Arial, sans-serif; margin: 0 0 2em; position: relative;}
+.bente-news-list .news-item:last-child h3,
+.tx-feedforward-pi1 .listitem:last-child h3 {margin: 0;}
+.bente-news-list .news-item h3 a,
+.tx-feedforward-pi1 .listitem h3 a {display: block; padding-left: 50px; /* background: url(../images/icons.png) 10px -61px no-repeat; */ color: #313131; min-height: 2em;}
+/*
+.bente-news-list .facebook h3 a,
+.tx-feedforward-pi1 .facebook h3 a  {background-position: 10px -136px;}
+.bente-news-list .blog h3 a,
+.tx-feedforward-pi1 .blog h3 a {background-position: 10px -212px;}
+*/
+.bente-news-list .facebook h3 a::before,
+.tx-feedforward-pi1 .listitem h3 a::before{content: " "; height: 30px; width: 30px;
+	background: url(../images/icons.png) 0px -61px no-repeat;
+	position: absolute; top: 0; left: 10px;
+}
+.bente-news-list .facebook h3 a::before,
+.tx-feedforward-pi1 .facebook h3 a::before {background-position: 0px -136px;}
+.bente-news-list .blog h3 a::before,
+.tx-feedforward-pi1 .blog h3 a::before {background-position: 0px -212px;}
+
+
+/* !SECTION: Lederinfo og TR-info = .ledertrinfo */
+.ledertrinfo {margin-bottom: 20px;}
+
+
+
+/* !SECTION: Kongres */
+.kongres {background: url(../images/kongres.jpg) no-repeat center -185px; padding-top: 20px;}
+
+.kongres section .span_8 ul.related li a {color: #fff;}
+
+/* Kongres / Konference før */
+.kongres-for .span_8 .news-item .content {padding: 10px 30px 35px;}
+.kongres-for .span_8 .news-item h2 {font-size: 4.3333em; font-weight: bold; margin-bottom: 30px;} /* 65px */
+
+.kongres-for .schedule {margin-bottom: 10px; padding: 25px 30px 5px; background: #444;}
+.kongres-for .schedule p {margin-top: 0; font-size: 1.3333em; letter-spacing: 0.05em; color: #fff;} /* 20px, ekstra letter-spacing*/
+
+/* Kongres / Konference under */
+.kongres-under .black {padding: 20px 20px 5px;}
+
+.kongres-under .livefeed {background: url(../images/live.png) 0 0 no-repeat; min-height: 30px; padding-left: 90px;}
+.kongres-under .livefeed p {color: #fff; font-size: 1.06667em; line-height: 30px; letter-spacing: 0.03em;}
+
+/* Kongres / Konference efter */
+.kongres-efter .span_8 .news-list {padding-bottom: 30px;}
+.kongres-efter .news-item .content,
+.kongres-efter ul.related {margin: 0 30px;}
+
+.kongres-efter .video {position: relative; background: #444; padding: 10px; width: 43.939394%; float: left; margin: 5px 0 10px 30px; min-height: 93px;}
+.kongres-efter .video:nth-child(3) {float: right; margin: 5px 30px 10px 0;}
+.kongres-efter .video img {position: absolute; top: 10px; left: 10px; clip: rect(0 80px 73px 0);}
+.kongres-efter .video .content {margin: 0 0 0 90px;}
+.kongres-efter .video h2 {font: normal 1em "Proxima N W01 Reg", Arial, sans-serif; margin: 7px 20px 0 0;}
+
+.kongres-efter ul.related {clear: both;}
+
+
+/* Kongres højre kol */
+.kongres .span_4 .banner {background: #fff; background: rgba(255,255,255,0.95); padding: 10px 10px 5px; margin-bottom: 10px; min-height: 96px;}
+.kongres .span_4 .banner .leftimage {float: left; margin-right: 15px;}
+.kongres .span_4 .banner p {margin: 5px 0 0; font: 1.2em/1.333 Georgia, "Times New Roman", serif;} /* 18px */
+.kongres .span_4 .banner a {color: #000;}
+
+.kongres .span_4 .banner:first-child {text-align: center;}
+.kongres .span_4 .banner:first-child p {border-top: 1px solid #e3e7e7; margin: 10px -10px 10px; padding-top: 12px; font: 1.2em/1.333 "Proxima N W01 Reg", Arial, sans-serif; color: #282828;}
+
+
+
+/* !Newsletters */
+.newsletter {padding: 45px 30px 30px; margin-bottom: 20px;}
+.span_4 .newsletter,
+.span_6 .newsletter {padding: 30px; margin-bottom: 0;}
+
+.newsletter h2 {float: left; font: 52px/54px "Proxima N W01 Light", sans-serif; color: #fff; margin: 0; max-width: 50%;}
+.span_4 .newsletter h2,
+.span_6 .newsletter h2 {float: none; font-size: 40px; line-height: 42px; margin: 0 0 30px; max-width: none;}
+
+.newsletter .content {float: right; width: 45%; margin-top: 20px;}
+.span_4 .newsletter .content,
+.span_6 .newsletter .content {float: none; width: auto; margin-top: 0;}
+
+.newsletter p {font-size: 20px; line-height: 24px; margin: 0 0 10px; text-align: right;}
+.span_4 .newsletter p,
+.span_6 .newsletter p {margin: 0 0 15px; text-align: left;}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {display: inline-block; width: 49.9%; margin: 0; padding: 15px; color: #7f9f94; background: #fff; border: 0; border-radius: 0; text-align: left; font-size: 18px;}
+.newsletter input[type="submit"] {color: #fff; background: #5d686f;}
+
+.span_4 .newsletter input[type="text"], .span_6 .newsletter input[type="text"],
+.span_4 .newsletter input[type="email"], .span_6 .newsletter input[type="email"],
+.span_4 .newsletter input[type="submit"], .span_6 .newsletter input[type="submit"] {display: block; width: 100%;}
+
+.newsletter .checkboxes {margin-bottom: 20px;}
+.newsletter .checkboxes input {vertical-align: top; margin-top: 2px;}
+
+
+/* Social media links */
+.socialmedia-links > div {float: left; width: 32%; margin-right: 2%; height: 50px;}
+.socialmedia-links > div:last-child {margin-right: 0;}
+.socialmedia-links > div a {display: block; padding-left: 41px; line-height: 50px; color: #fff; background-image: url(../images/icons.png); background-repeat: no-repeat;}
+.socialmedia-links > div span {padding-left: 9px;}
+.socialmedia-links .facebook a {background-color: #305c99; background-position: 16px -346px;}
+.socialmedia-links .twitter a {background-color: #00cdff; background-position: 16px -414px;}
+.socialmedia-links .linkedin a {background-color: #3096be; background-position: 16px -278px;}
+.socialmedia-links .facebook a span {border-left: 1px solid #7593bb;}
+.socialmedia-links .twitter a span {border-left: 1px solid #56deff;}
+.socialmedia-links .linkedin a span {border-left: 1px solid #75b9d4;}
+
+
+/* Section: Emneord */
+.emneord {background: #e9e9e9; padding-top: 40px; padding-bottom: 20px; clear: both;}
+.emneord .list-header {background-image: url(../images/header-lines-softgreybg.png);}
+.emneord .list-header span {background: #e9e9e9;}
+
+.emneord .emne_container {float: left; width: 25%;}
+.emneord .emne_container:nth-child(4n+1) {clear: both;}
+.emneord .emne_container h3 {font: 1.267em "Proxima N W01 Reg", Arial, sans-serif;}
+.emneord .emne_container h3 a {color: #28c0da;}
+
+.emneord .emne_container ul {list-style: none; margin: 20px 0 10px; padding: 0;}
+.emneord .emne_container li {font-size: 0.933em; line-height: 1.8;}
+.emneord .emne_container li a {color: #313131; }
+
+
+/* Section: Medlemstilbud */
+.medlemstilbud {margin-bottom: 20px;}
+/* .medlemstilbud h2 {font: 2em "Proxima N W01 Reg", Arial, sans-serif;} */
+.black h2.list-header {color: #fff; margin-right: 11%; background-image: url(../images/header-lines-black.png);}
+.black h2.list-header span {color: #fff; background: #1f2328;}
+
+
+
+/* ==========================================================================
+   Flex slider (http://www.woothemes.com/flexslider/)
+   ========================================================================== */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+.flexslider {position: relative; zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.flexslider .slides li {margin-right: 20px}
+
+.medlemstilbud .slides li {position: relative; min-height: 162px;}
+.medlemstilbud .slides li p {position: absolute; top: 0; left: 0; height: 36px; margin: 0; padding: 10px; width: 100%; background: #454545; color: #28c0da;}
+.medlemstilbud .slides li a {color: #28c0da !important; display: block;} /* Stupid important... argh */
+.medlemstilbud .slides li:hover a {text-decoration: underline;}
+.medlemstilbud .slides li img {position: absolute; top: 36px; left: 0; clip: rect(0 225px 126px 0);}
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 36px; height: 36px; margin: 0; display: block; background: url(../images/icons.png) no-repeat 0 -1011px; position: absolute; top: -54px; right: 40px; z-index: 10; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav .flex-next {background-position: 0 -1085px; right: 0; }
+.flex-direction-nav a:hover {-webkit-box-shadow: 0 0 6px 0px #fff; box-shadow: 0 0 6px 0px #fff;}
+.flex-direction-nav .flex-disabled,
+.flex-direction-nav .flex-disabled:hover {opacity: .6; cursor: default; -webkit-box-shadow: none; box-shadow: none;}
+
+/* Control Nav */
+.flex-control-nav {display: none;}
+
+
+
+/* ==========================================================================
+   Politikområdeforsider
+   ========================================================================== */
+
+#bluegreen .news-list .byline .cat {color: #6ccfb2;}
+#bluegreen .sectionbasedcolor {background: #9ddfcc;}
+#bluegreen .sectionbasedcolor input[type="submit"] {background: #6ccfb2;}
+#bluegreen .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-bluegreen.png);}
+
+#orange .news-list .byline .cat {color: #ff862b;}
+#orange .sectionbasedcolor {background: #ffaf71;}
+#orange .sectionbasedcolor input[type="submit"] {background: #ff862b;}
+#orange .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-orange.png);}
+
+#blue .news-list .byline .cat {color: #13a7d7;}
+#blue .sectionbasedcolor {background: #23b3d9;}
+#blue .sectionbasedcolor input[type="submit"] {background: #13a7d7;}
+#blue .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-blue.png);}
+
+#green .news-list .byline .cat {color: #84c708;}
+#green .sectionbasedcolor {background: #a7df3e;}
+#green .sectionbasedcolor input[type="submit"] {background: #84c708;}
+#green .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-green.png);}
+
+#red .news-list .byline .cat {color: #fd5555;}
+#red .sectionbasedcolor {background: #fd7272;}
+#red .sectionbasedcolor input[type="submit"] {background: #fd5555;}
+#red .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-red.png);}
+
+#yellow .news-list .byline .cat {color: #ffbe00;}
+#yellow .sectionbasedcolor {background: #ffce3e;}
+#yellow .sectionbasedcolor input[type="submit"] {background: #ffbe00;}
+#yellow .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-yellow.png);}
+
+#darkblue .news-list .byline .cat {color: #6d9499;}
+#darkblue .sectionbasedcolor {background: #8db5ba;}
+#darkblue .sectionbasedcolor input[type="submit"] {background: #6d9499;}
+#darkblue .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-darkblue.png);}
+
+
+
+
+/* !FCE Simpleboxes */
+
+.simplebox ul {padding-left: 20px;}
+.simplebox ul a {display: inline-block; padding: 5px 0;}
+
+
+
+/* Kurser / .kursustabs */
+
+#main .kursustabs .span_4.black {padding: 20px 20px 60px; background: #282828;}
+.kursustabs {padding: 0;}
+#main .kursustabs.row {padding: 0;}
+.kursustabs .black a {color: #d44376 !important;}
+.kursustabs .desc {padding: 0 10px;}
+.kursustabs .desc h2 {font-family: "Proxima N W01 Reg", Arial, sans-serif;}
+
+.kursustabs .tabs {padding: 0; margin-top: 20px; border-bottom: 1px solid #434343; list-style: none;}
+.kursustabs .tabs li {float: none; margin: 0;}
+.kursustabs .tabs li a {display: block; float: none; padding: 15px 30px 10px 15px; font-size: 1.2em; 
+line-height: 1.333; color: #fff !important; border-top: 1px solid #434343; cursor: pointer;
+background: url(../images/kurser/arrow_pink.png) right center no-repeat;
+}
+.kursustabs .tabs li.active a,
+.kursustabs .tabs a:hover {background-color: #3e3e3e; background-image: url(../images/kurser/arrow_pink_act.png);}
+
+.kursustabs .tabcontent {padding: 0 0 60px;}
+.kursustabs .tabcontent .span_8 {width: 58.3333%;}
+.kursustabs .tabcontent .span_4 {width: 38.636364%; padding-right: 3.0303%;}
+.kursustabs .tabcontent .col {margin-left: 3.0303%;}
+.kursustabs .tabcontent .col:first-child {margin-left: 0;}
+
+.kurser .imagecombo {position: relative;}
+.kurser .imagecombo .byline {display: block; position: absolute; bottom: 0; left: 0; width: 100%; background: #db1f61; background: rgba(219,31,97, 0.7); padding: 10px 0 5px 10px; color: #fff; margin: 0;}
+.kurser .span_8 .imagecombo .byline {padding: 15px 0 10px 20px; padding-top: 15px; font-size: 1em;}
+.kurser .noimage .imagecombo .byline {position: static; display: inline; min-height: 0; width: auto; background: none; color: #ca527c; padding: 0;}
+.kurser .imagecombo .byline .cat {margin-left: 8px;}
+.kurser .news-list .imagecombo img {margin-bottom: 0;}
+.kurser .span_8 .news-list h2 {font-size: 2.6667em;}
+.kurser .span_4 .news-list h2 {font-size: 1.4667em;}
+
+.kursustabs .csc-frame-frame1 p {position: absolute; bottom: 0; right: 0; margin-bottom: 0; text-align: right; padding-right: 50px; background: #d9dbdc url(../images/kurser/arrow_grey.png) right center no-repeat; line-height: 46px; width: 68%;}
+.kursustabs .csc-frame-frame1 p a {color: #454545;}
+
+
+
+/* Nyt fra medlemsorganisationerne */
+
+span.company {font: 0.9333em "Proxima N W01 Smbd";}
+span.company a {color: #000;}
+.medlemsorg span.company:after {content: ""; display: block; text-indent: -99px; width: 17px; height: 1px; background: #d4d4d4; margin-top: 10px;}
+
+.medlemsorg .span_6 .row .span_6 {width: 47.9592%;}
+.medlemsorg .span_6 .row .col {margin-left: 4.0816%;}
+.medlemsorg .span_6 .row .col:first-child {margin-left: 0;}
+
+.medlemsorg h3 {font-family: Georgia, sans-serif;}
+.medlemsorg h2 span, .medlemsorg h3 span {font-weight: bold;}
+.medlemsorg .span_6 .noimage h2, .medlemsorg .span_6 .noimage h3 {font-size: 2.6667em; margin-top: 15px;}
+.medlemsorg .span_6 h2, .medlemsorg .span_6 h3,
+.medlemsorg .span_6 .row .noimage h2, .medlemsorg .span_6 .row .noimage h3 {font-size: 1.3125em; line-height: 1.19; margin-bottom: 0; margin-top: 10px;}
+
+.medlemsorg .wide .image {max-width: 50%; float: left;}
+.medlemsorg .wide .image img {max-width: none;}
+.medlemsorg .wide .content {width: 48%; float: right; padding-top: 10px;}
+.medlemsorg .news-list .wide img {margin-bottom: 0;}
+.medlemsorg .news-item {margin-bottom: 20px;}
+
+/* Baggrundsfarver, pastel-ish */
+.medlemsorg .first .news-item:nth-child(2) {background: #e9e9e9; padding: 15px 25px;}
+.medlemsorg .second .news-item:nth-child(1),
+.medlemsorg .second .second_a .news-item:nth-child(2) {background: #d3e3eb;}
+.medlemsorg .second .news-item:nth-child(2) {background: #e6e3e6; padding: 15px 25px;}
+.medlemsorg .second .second_a .news-item:nth-child(1) {background: #eeecda; padding: 15px;}
+.medlemsorg .second .second_b .news-item {background: #e9e9e9;}
+.medlemsorg .second .second_b .content {padding: 10px 15px 15px;}
+
+/* Piler / Arrows */
+.medlemsorg .image {position: relative;}
+.medlemsorg .image:after {content: ""; display: block; position: absolute; bottom: 10px; left: 20px;
+	border-left: 17px solid transparent;	border-right: 17px solid transparent;	border-bottom: 17px solid #fff;}
+.medlemsorg .wide .image:after {bottom: auto; left: auto; top: 20px; right: 0;
+	border-top: 17px solid transparent; border-right: 17px solid #fff; border-bottom: 17px solid transparent;}
+.medlemsorg .second .news-item:nth-child(1) .image:after {border-right-color: #d3e3eb;}
+.medlemsorg .second .second_b .image:after {border-bottom-color: #e9e9e9;}
+.medlemsorg .second .second_a .news-item:nth-child(1) {border-bottom-color: #eeecda;}
+.medlemsorg .second .second_a .news-item:nth-child(2) {border-bottom-color: #d3e3eb;}
+.medlemsorg .second .second_b .news-item .image:after {border-right-color: transparent;}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
