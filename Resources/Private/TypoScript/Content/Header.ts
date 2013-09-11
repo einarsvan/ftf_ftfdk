@@ -5,11 +5,20 @@ lib.content.header{
 
 	# Logo
 	10 = TEXT
-	10.value = Logo...<br>
+	10.value = <span class="ir">FTF - </span>Hovedorganisation for 450.000 offentligt og privat ansatte
+	10.wrap = <div class="logo"><h1>|</h1></div>
 
 	# Search
 	20 = TEXT
-	20.value = Search...<br>
+	20{
+		wrap = <div class="search"><form action="|"><input type="hidden" name="cx" value="012202521945441316049:s9q4vxyzdli"><input type="hidden" name="id" value="32734"><input type="hidden" name="ie" value="iso-8859-1"><input type="text" name="q"><button aria-label="Søg"><span></span></button></form></div>
+		typolink{
+			# ID of search page
+			parameter = 32734
+			returnLast = url
+		}
+	}
+
 
 	# Main menu
 	30 < lib.navigation.mainmenu

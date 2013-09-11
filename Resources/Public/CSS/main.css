@@ -163,7 +163,7 @@ header {margin-bottom: 20px;}
 /* Logo */
 .logo {float: left; width: 70%; margin: 20px 0;}
 .logo h1 {font-family: "Proxima N W01 Reg", sans-serif; font-size: 1em; line-height: 1; margin: 0; padding: 0; font-weight: normal; color: grey;}
-.logo span {display: inline-block; width: 103px; height: 36px; margin-right: 20px; background: url(../images/logo.png) 0 0 no-repeat;}
+.logo span {display: inline-block; width: 103px; height: 36px; margin-right: 20px; background: url(../Images/logo.png) 0 0 no-repeat;}
 .logo a {color: grey;}
 
 /* Search */
@@ -172,7 +172,7 @@ header {margin-bottom: 20px;}
 .search form {position: relative;}
 .search input[type="text"] {position: absolute; top: 0; right: 0; width: 100%; padding: 5px 45px 5px 5px; border: 1px solid #d2d2d2; border-radius: 0;}
 .search button {position: absolute; top: 6px; right: 12px; height: 17px; width: 27px; border: 1px solid #d2d2d2; border-width: 0 0 0 1px; 
-	background: #fff url(../images/icons.png) 10px -937px no-repeat;}
+	background: #fff url(../Images/icons.png) 10px -937px no-repeat;}
 
 /* Mainmenu */
 .mainmenu a {color: #000; text-decoration: none; font-size: 0.9333em;} /* 14px */
@@ -267,7 +267,7 @@ address p {float: left; display: inline-block; color: #777; font-style: normal; 
 address .socialmedia {float: right;}
 address .socialmedia ul {margin: 0; padding: 0; list-style: none;}
 address .socialmedia li {display: inline-block; margin-left: 15px;}
-address .socialmedia li a {display: block; line-height: 30px; background: url(../images/icons.png) 0 -715px no-repeat; width: 27px; height: 27px;}
+address .socialmedia li a {display: block; line-height: 30px; background: url(../Images/icons.png) 0 -715px no-repeat; width: 27px; height: 27px;}
 address .socialmedia a.twitter {background-position: 0 -863px;}
 address .socialmedia a.linkedin {background-position: 0 -789px;}
 address .socialmedia a.bentesblog {background-position: 0 -641px;}
@@ -327,10 +327,10 @@ address .socialmedia a.bentesblog {background-position: 0 -641px;}
 /* List-header */
 h2.list-header,
 .span_8 h2.list-header {font: normal 1.2667em/1 "Proxima N W01 Reg", Arial, sans-serif; text-transform: uppercase; margin: 0 0 20px; 
-	background: url(../images/header-lines.png) 0 2px repeat-x;} /* 19px */
+	background: url(../Images/header-lines.png) 0 2px repeat-x;} /* 19px */
 h2.list-header span {background: #fff; display: inline-block; padding-right: 30px;}
 /* Light blue list-header */
-.lightblue h2.list-header {background-image: url(../images/header-lines-greybg.png); margin-left: 20px; margin-right: 20px;}
+.lightblue h2.list-header {background-image: url(../Images/header-lines-greybg.png); margin-left: 20px; margin-right: 20px;}
 .lightblue h2.list-header span {background: #f0f4f6;}
 
 .news-list h3 {font: 1em/1.3333 "Proxima N W01 Reg", Arial, sans-serif; color: #000; margin: 0 0 10px;}
@@ -427,7 +427,7 @@ section .span_6 .news-list h3 {font: 2.6667em/1.1429 Georgia, "Times New Roman",
 
 /* Grey */
 .simplebox.grey {padding: 30px;}
-.simplebox.grey h2.list-header {background-image: url(../images/header-lines-softgreybg.png);}
+.simplebox.grey h2.list-header {background-image: url(../Images/header-lines-softgreybg.png);}
 .simplebox.grey .list-header span {background: #dce3e6;}
 .simplebox.grey ul a {color: #000;}
 
@@ -439,7 +439,7 @@ section .span_6 .news-list h3 {font: 2.6667em/1.1429 Georgia, "Times New Roman",
 
 /* LIST: headersonly */
 .headersonly .news-item,
-.span_4 .headersonly .news-item {padding: 10px 60px 0 30px; margin: 0; border-bottom: 1px solid #e5ecef; background: url(../images/list-arrow.png) 0 15px no-repeat;}
+.span_4 .headersonly .news-item {padding: 10px 60px 0 30px; margin: 0; border-bottom: 1px solid #e5ecef; background: url(../Images/list-arrow.png) 0 15px no-repeat;}
 .headersonly .news-item:last-child {border: 0;}
 
 
@@ -565,7 +565,7 @@ article.news-single .subheader img {vertical-align: top;}
 .bente-news-list .news-item:last-child h3,
 .tx-feedforward-pi1 .listitem:last-child h3 {margin: 0;}
 .bente-news-list .news-item h3 a,
-.tx-feedforward-pi1 .listitem h3 a {display: block; padding-left: 50px; /* background: url(../images/icons.png) 10px -61px no-repeat; */ color: #313131; min-height: 2em;}
+.tx-feedforward-pi1 .listitem h3 a {display: block; padding-left: 50px; /* background: url(../Images/icons.png) 10px -61px no-repeat; */ color: #313131; min-height: 2em;}
 /*
 .bente-news-list .facebook h3 a,
 .tx-feedforward-pi1 .facebook h3 a  {background-position: 10px -136px;}
@@ -574,7 +574,7 @@ article.news-single .subheader img {vertical-align: top;}
 */
 .bente-news-list .facebook h3 a::before,
 .tx-feedforward-pi1 .listitem h3 a::before{content: " "; height: 30px; width: 30px;
-	background: url(../images/icons.png) 0px -61px no-repeat;
+	background: url(../Images/icons.png) 0px -61px no-repeat;
 	position: absolute; top: 0; left: 10px;
 }
 .bente-news-list .facebook h3 a::before,
@@ -589,7 +589,7 @@ article.news-single .subheader img {vertical-align: top;}
 
 
 /* !SECTION: Kongres */
-.kongres {background: url(../images/kongres.jpg) no-repeat center -185px; padding-top: 20px;}
+.kongres {background: url(../Images/kongres.jpg) no-repeat center -185px; padding-top: 20px;}
 
 .kongres section .span_8 ul.related li a {color: #fff;}
 
@@ -603,7 +603,7 @@ article.news-single .subheader img {vertical-align: top;}
 /* Kongres / Konference under */
 .kongres-under .black {padding: 20px 20px 5px;}
 
-.kongres-under .livefeed {background: url(../images/live.png) 0 0 no-repeat; min-height: 30px; padding-left: 90px;}
+.kongres-under .livefeed {background: url(../Images/live.png) 0 0 no-repeat; min-height: 30px; padding-left: 90px;}
 .kongres-under .livefeed p {color: #fff; font-size: 1.06667em; line-height: 30px; letter-spacing: 0.03em;}
 
 /* Kongres / Konference efter */
@@ -664,7 +664,7 @@ article.news-single .subheader img {vertical-align: top;}
 /* Social media links */
 .socialmedia-links > div {float: left; width: 32%; margin-right: 2%; height: 50px;}
 .socialmedia-links > div:last-child {margin-right: 0;}
-.socialmedia-links > div a {display: block; padding-left: 41px; line-height: 50px; color: #fff; background-image: url(../images/icons.png); background-repeat: no-repeat;}
+.socialmedia-links > div a {display: block; padding-left: 41px; line-height: 50px; color: #fff; background-image: url(../Images/icons.png); background-repeat: no-repeat;}
 .socialmedia-links > div span {padding-left: 9px;}
 .socialmedia-links .facebook a {background-color: #305c99; background-position: 16px -346px;}
 .socialmedia-links .twitter a {background-color: #00cdff; background-position: 16px -414px;}
@@ -676,7 +676,7 @@ article.news-single .subheader img {vertical-align: top;}
 
 /* Section: Emneord */
 .emneord {background: #e9e9e9; padding-top: 40px; padding-bottom: 20px; clear: both;}
-.emneord .list-header {background-image: url(../images/header-lines-softgreybg.png);}
+.emneord .list-header {background-image: url(../Images/header-lines-softgreybg.png);}
 .emneord .list-header span {background: #e9e9e9;}
 
 .emneord .emne_container {float: left; width: 25%;}
@@ -692,7 +692,7 @@ article.news-single .subheader img {vertical-align: top;}
 /* Section: Medlemstilbud */
 .medlemstilbud {margin-bottom: 20px;}
 /* .medlemstilbud h2 {font: 2em "Proxima N W01 Reg", Arial, sans-serif;} */
-.black h2.list-header {color: #fff; margin-right: 11%; background-image: url(../images/header-lines-black.png);}
+.black h2.list-header {color: #fff; margin-right: 11%; background-image: url(../Images/header-lines-black.png);}
 .black h2.list-header span {color: #fff; background: #1f2328;}
 
 
@@ -736,7 +736,7 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 36px; height: 36px; margin: 0; display: block; background: url(../images/icons.png) no-repeat 0 -1011px; position: absolute; top: -54px; right: 40px; z-index: 10; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav a {width: 36px; height: 36px; margin: 0; display: block; background: url(../Images/icons.png) no-repeat 0 -1011px; position: absolute; top: -54px; right: 40px; z-index: 10; cursor: pointer; text-indent: -9999px;}
 .flex-direction-nav .flex-next {background-position: 0 -1085px; right: 0; }
 .flex-direction-nav a:hover {-webkit-box-shadow: 0 0 6px 0px #fff; box-shadow: 0 0 6px 0px #fff;}
 .flex-direction-nav .flex-disabled,
@@ -754,37 +754,37 @@ html[xmlns] .slides {display: block;}
 #bluegreen .news-list .byline .cat {color: #6ccfb2;}
 #bluegreen .sectionbasedcolor {background: #9ddfcc;}
 #bluegreen .sectionbasedcolor input[type="submit"] {background: #6ccfb2;}
-#bluegreen .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-bluegreen.png);}
+#bluegreen .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-bluegreen.png);}
 
 #orange .news-list .byline .cat {color: #ff862b;}
 #orange .sectionbasedcolor {background: #ffaf71;}
 #orange .sectionbasedcolor input[type="submit"] {background: #ff862b;}
-#orange .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-orange.png);}
+#orange .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-orange.png);}
 
 #blue .news-list .byline .cat {color: #13a7d7;}
 #blue .sectionbasedcolor {background: #23b3d9;}
 #blue .sectionbasedcolor input[type="submit"] {background: #13a7d7;}
-#blue .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-blue.png);}
+#blue .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-blue.png);}
 
 #green .news-list .byline .cat {color: #84c708;}
 #green .sectionbasedcolor {background: #a7df3e;}
 #green .sectionbasedcolor input[type="submit"] {background: #84c708;}
-#green .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-green.png);}
+#green .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-green.png);}
 
 #red .news-list .byline .cat {color: #fd5555;}
 #red .sectionbasedcolor {background: #fd7272;}
 #red .sectionbasedcolor input[type="submit"] {background: #fd5555;}
-#red .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-red.png);}
+#red .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-red.png);}
 
 #yellow .news-list .byline .cat {color: #ffbe00;}
 #yellow .sectionbasedcolor {background: #ffce3e;}
 #yellow .sectionbasedcolor input[type="submit"] {background: #ffbe00;}
-#yellow .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-yellow.png);}
+#yellow .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-yellow.png);}
 
 #darkblue .news-list .byline .cat {color: #6d9499;}
 #darkblue .sectionbasedcolor {background: #8db5ba;}
 #darkblue .sectionbasedcolor input[type="submit"] {background: #6d9499;}
-#darkblue .span_4 .headersonly .news-item {background-image: url(../images/list-arrow-darkblue.png);}
+#darkblue .span_4 .headersonly .news-item {background-image: url(../Images/list-arrow-darkblue.png);}
 
 
 
@@ -809,10 +809,10 @@ html[xmlns] .slides {display: block;}
 .kursustabs .tabs li {float: none; margin: 0;}
 .kursustabs .tabs li a {display: block; float: none; padding: 15px 30px 10px 15px; font-size: 1.2em; 
 line-height: 1.333; color: #fff !important; border-top: 1px solid #434343; cursor: pointer;
-background: url(../images/kurser/arrow_pink.png) right center no-repeat;
+background: url(../Images/kurser/arrow_pink.png) right center no-repeat;
 }
 .kursustabs .tabs li.active a,
-.kursustabs .tabs a:hover {background-color: #3e3e3e; background-image: url(../images/kurser/arrow_pink_act.png);}
+.kursustabs .tabs a:hover {background-color: #3e3e3e; background-image: url(../Images/kurser/arrow_pink_act.png);}
 
 .kursustabs .tabcontent {padding: 0 0 60px;}
 .kursustabs .tabcontent .span_8 {width: 58.3333%;}
@@ -829,7 +829,7 @@ background: url(../images/kurser/arrow_pink.png) right center no-repeat;
 .kurser .span_8 .news-list h2 {font-size: 2.6667em;}
 .kurser .span_4 .news-list h2 {font-size: 1.4667em;}
 
-.kursustabs .csc-frame-frame1 p {position: absolute; bottom: 0; right: 0; margin-bottom: 0; text-align: right; padding-right: 50px; background: #d9dbdc url(../images/kurser/arrow_grey.png) right center no-repeat; line-height: 46px; width: 68%;}
+.kursustabs .csc-frame-frame1 p {position: absolute; bottom: 0; right: 0; margin-bottom: 0; text-align: right; padding-right: 50px; background: #d9dbdc url(../Images/kurser/arrow_grey.png) right center no-repeat; line-height: 46px; width: 68%;}
 .kursustabs .csc-frame-frame1 p a {color: #454545;}
 
 
