@@ -1,7 +1,7 @@
 lib.content.header = COA
 lib.content.header{
 	
-	wrap = <header><div class="container">|</div></header>
+	wrap = <header>|</header>
 
 	# Logo
 	10 = TEXT

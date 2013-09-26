@@ -1,8 +1,13 @@
-<div class="topbanner">
-	{banner -> f:format.raw()}
+<div class="container">
+	<div class="topbanner">
+		{banner -> f:format.raw()}
+	</div>
+	<f:cObject typoscriptObjectPath="lib.content.header"/>
+	<div class="content">
+		<f:render section="content" />
+	</div>
+	<f:cObject typoscriptObjectPath="lib.content.footer"/>
 </div>
-<f:cObject typoscriptObjectPath="lib.content.header"/>
-<div class="content">
-	<f:render section="content" />
-</div>
-<f:cObject typoscriptObjectPath="lib.content.footer"/>
+<nav id="mobilenav">
+	<f:cObject typoscriptObjectPath="lib.navigation.mobile"/>
+</nav>

@@ -1,0 +1,46 @@
+/**
+ * Variables
+ * Colors, font sizes and font families
+ */
+
+// Colors
+$ftfblue: #2cd4e8;
+$bluegreen: #6ccfb2;
+$orange: #ff862b;
+$blue: #13a7d7;
+$green: #84c708;
+$red: #fd5555;
+$yellow: #ffbe00;
+$darkblue: #6d9499;
+
+// Fonts, using Vertical Rythm
+$base-font-size: 15px;
+$base-line-height: 20px;
+
+// Susy grid
+$total-columns  : 4;
+$column-width   : 65px;
+$gutter-width   : 20px;
+$grid-padding   : $gutter-width;
+$container-style: fluid;
+
+// Breakpoints
+$medium: 8;
+$full: 12;
+
+
+/**
+ * Mixins
+ */
+
+// Hide content visually but not from screen readers
+@mixin visuallyhidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,178 @@
+/**
+ * Navigation
+ */
+
+.mainmenu {
+	display: none;
+	@include at-breakpoint($medium){
+		display: block;
+	}
+
+	a {
+		@include adjust-font-size-to(14px);
+		color: black;
+		text-decoration: none;
+	}
+	
+	// Level 1
+	.lvl1 {
+		display: inline-table;
+		margin: 0;
+		padding: 0 0 0 2%;
+		width: 100%;
+		border-bottom: 3px solid $ftfblue;
+		
+		li {
+			display: table-cell;
+			text-align: center;
+			&.act a {
+				background: $ftfblue;
+				color: white; 
+				border: 6px solid white; 
+				border-top: 0; 
+				margin-bottom: -3px; 
+				text-decoration: none;
+			}
+		}
+		a {
+			display: block;
+			margin: 0 0 3px;
+			padding: 3px 0 2px;
+			text-transform: uppercase;
+			&:hover {
+				margin-bottom: -3px;
+				border-bottom: 6px solid white;
+			}
+		}
+	}
+
+	// Level 2
+	.lvl2 {
+		margin: 3px 0 0; 
+		padding: 0 0 0 5px; 
+		background: #444;
+		
+		li {
+			display: inline;
+
+			&.act a,
+			a:hover {
+				background: #171717;
+				margin-left: -1px;
+				border-left: 1px solid #171717;
+			}
+			&.act span,
+			a:hover span {
+				border-color: #171717;
+			}
+			a:hover span {
+				text-decoration: underline;
+			}
+			&:last-child span {
+				border: 0;
+			}
+		}
+		a {
+			display: inline-block;
+			padding: 10px 0 8px;
+		}
+		span {
+			display: inline-block;
+			padding: 2px 15px 2px;
+			color: white;
+			border-right: 1px solid #696969;
+		}
+	}
+
+	// Level 3
+	.lvl3 {
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid $ftfblue;
+		
+		li {
+			display: inline;
+		
+			&:first-child a {
+				padding-left: 1px;
+			}
+			&.act a {
+				border-bottom: 3px solid $ftfblue; 
+				margin-bottom: 0;
+			}
+			&:last-child span {
+				border: 0;
+			}
+		}
+		a {
+			display: inline-block; 
+			margin: 0 0 3px 0; 
+			padding: 8px 0 2px;
+			@include adjust-font-size-to(12px);
+			color: #4e4e4e;
+		}
+		span {
+			padding: 2px 8px 2px; 
+			border-right: 1px solid $ftfblue;
+		}
+	}
+}
+
+/**
+ * Different colors for each section
+ */
+#bluegreen .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $bluegreen;}
+	.lvl1 li.act a {background: $bluegreen;}
+}
+
+#orange .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $orange;}
+	.lvl1 li.act a {background: $orange;}
+}
+
+#blue .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $blue;}
+	.lvl1 li.act a {background: $blue;}
+}
+
+#green .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $green;}
+	.lvl1 li.act a {background: $green;}
+}
+
+#red .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $red;}
+	.lvl1 li.act a {background: $red;}
+}
+
+#yellow .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $yellow;}
+	.lvl1 li.act a {background: $yellow;}
+}
+
+#darkblue .mainmenu {
+	.lvl1,
+	.lvl3,
+	.lvl3 li.act a,
+	.lvl3 span {border-color: $darkblue;}
+	.lvl1 li.act a {background: $darkblue;}
+}

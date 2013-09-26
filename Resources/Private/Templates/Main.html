@@ -1,9 +1,7 @@
 <f:layout name="MainLayout" />
 <f:section name="content">
 	<div id="main" role="main">
-		<div class="container">
-			{content -> f:format.raw()}
-		</div>
+		{content -> f:format.raw()}
 	</div>
 	<div id="secondary">
 		<f:cObject typoscriptObjectPath="lib.content.secondary"/>

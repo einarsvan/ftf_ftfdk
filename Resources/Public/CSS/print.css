@@ -1,3 +1,82 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 7, ../SASS/print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 15, ../SASS/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 19, ../SASS/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 23, ../SASS/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 33, ../SASS/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 38, ../SASS/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 43, ../SASS/print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 48, ../SASS/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 52, ../SASS/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 62, ../SASS/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 68, ../SASS/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

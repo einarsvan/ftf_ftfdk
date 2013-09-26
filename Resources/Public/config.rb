@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
 # Require SUSY for grids
-#require "susy"
+require "susy"
 
 
 # Set this to the root of your project when deployed:

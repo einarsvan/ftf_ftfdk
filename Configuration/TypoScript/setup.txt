@@ -8,8 +8,12 @@
 # Stylesheets
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Setup/Stylesheets.ts">
 
+# Javascript
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Setup/JavaScripts.ts">
+
 # Navigation / Menus
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Navigation/MainMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Navigation/Mobile.ts">
 
 # Content objects
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ftf_ftfdk/Resources/Private/TypoScript/Content/Header.ts">
