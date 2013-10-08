@@ -5,6 +5,216 @@
  */
 /* Vendor Dependencies */
 /* Base settings for colors, sizes, fonts, etc. */
+@font-face {
+  font-family: 'FTF';
+  src: url("../Fonts/FTF.eot");
+  src: url("../Fonts/FTF.eot?#iefix") format("embedded-opentype"), url("../Fonts/FTF.woff") format("woff"), url("../Fonts/FTF.ttf") format("truetype"), url("../Fonts/FTF.svg#FTF") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, ../SASS/_font-face.scss */
+[data-icon]:before {
+  font-family: 'FTF';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 31, ../SASS/_font-face.scss */
+.icon-pen, .icon-phone, .icon-mail, .icon-camera, .icon-play, .icon-user, .icon-users, .icon-file-pdf, .icon-bubble, .icon-bubbles, .icon-location, .icon-tags, .icon-menu, .icon-facebook, .icon-facebook-2, .icon-twitter, .icon-twitter-2, .icon-google-plus, .icon-google-plus-2, .icon-mail-2, .icon-feed, .icon-feed-2, .icon-li, .icon-quotes-left, .icon-left-quote, .icon-arrow-right-simple, .icon-arrow-down-simple, .icon-arrow-up-simple, .icon-arrow-left-simple, .icon-linkedin, .icon-print, .icon-search, .icon-search-2 {
+  font-family: 'FTF';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 40, ../SASS/_font-face.scss */
+.icon-pen span, .icon-phone span, .icon-mail span, .icon-camera span, .icon-play span, .icon-user span, .icon-users span, .icon-file-pdf span, .icon-bubble span, .icon-bubbles span, .icon-location span, .icon-tags span, .icon-menu span, .icon-facebook span, .icon-facebook-2 span, .icon-twitter span, .icon-twitter-2 span, .icon-google-plus span, .icon-google-plus-2 span, .icon-mail-2 span, .icon-feed span, .icon-feed-2 span, .icon-li span, .icon-quotes-left span, .icon-left-quote span, .icon-arrow-right-simple span, .icon-arrow-down-simple span, .icon-arrow-up-simple span, .icon-arrow-left-simple span, .icon-linkedin span, .icon-print span, .icon-search span, .icon-search-2 span {
+  font-family: sans-serif;
+  display: none;
+}
+
+/* line 45, ../SASS/_font-face.scss */
+.icon-pen:before {
+  content: "\270e";
+}
+
+/* line 48, ../SASS/_font-face.scss */
+.icon-phone:before {
+  content: "\260f";
+}
+
+/* line 51, ../SASS/_font-face.scss */
+.icon-mail:before {
+  content: "\65";
+}
+
+/* line 54, ../SASS/_font-face.scss */
+.icon-camera:before {
+  content: "\2388";
+}
+
+/* line 57, ../SASS/_font-face.scss */
+.icon-play:before {
+  content: "\25b6";
+}
+
+/* line 60, ../SASS/_font-face.scss */
+.icon-user:before {
+  content: "\70";
+}
+
+/* line 63, ../SASS/_font-face.scss */
+.icon-users:before {
+  content: "\50";
+}
+
+/* line 66, ../SASS/_font-face.scss */
+.icon-file-pdf:before {
+  content: "\61";
+}
+
+/* line 69, ../SASS/_font-face.scss */
+.icon-bubble:before {
+  content: "\64";
+}
+
+/* line 72, ../SASS/_font-face.scss */
+.icon-bubbles:before {
+  content: "\44";
+}
+
+/* line 75, ../SASS/_font-face.scss */
+.icon-location:before {
+  content: "\58";
+}
+
+/* line 78, ../SASS/_font-face.scss */
+.icon-tags:before {
+  content: "\78";
+}
+
+/* line 81, ../SASS/_font-face.scss */
+.icon-menu:before {
+  content: "\6d";
+}
+
+/* line 84, ../SASS/_font-face.scss */
+.icon-facebook:before {
+  content: "\66";
+}
+
+/* line 87, ../SASS/_font-face.scss */
+.icon-facebook-2:before {
+  content: "\46";
+}
+
+/* line 90, ../SASS/_font-face.scss */
+.icon-twitter:before {
+  content: "\54";
+}
+
+/* line 93, ../SASS/_font-face.scss */
+.icon-twitter-2:before {
+  content: "\74";
+}
+
+/* line 96, ../SASS/_font-face.scss */
+.icon-google-plus:before {
+  content: "\67";
+}
+
+/* line 99, ../SASS/_font-face.scss */
+.icon-google-plus-2:before {
+  content: "\47";
+}
+
+/* line 102, ../SASS/_font-face.scss */
+.icon-mail-2:before {
+  content: "\45";
+}
+
+/* line 105, ../SASS/_font-face.scss */
+.icon-feed:before {
+  content: "\52";
+}
+
+/* line 108, ../SASS/_font-face.scss */
+.icon-feed-2:before {
+  content: "\72";
+}
+
+/* line 111, ../SASS/_font-face.scss */
+.icon-li:before {
+  content: "\25a0";
+}
+
+/* line 114, ../SASS/_font-face.scss */
+.icon-quotes-left:before {
+  content: "\71";
+}
+
+/* line 117, ../SASS/_font-face.scss */
+.icon-left-quote:before {
+  content: "\51";
+}
+
+/* line 120, ../SASS/_font-face.scss */
+.icon-arrow-right-simple:before {
+  content: "\2192";
+}
+
+/* line 123, ../SASS/_font-face.scss */
+.icon-arrow-down-simple:before {
+  content: "\2193";
+}
+
+/* line 126, ../SASS/_font-face.scss */
+.icon-arrow-up-simple:before {
+  content: "\2191";
+}
+
+/* line 129, ../SASS/_font-face.scss */
+.icon-arrow-left-simple:before {
+  content: "\2190";
+}
+
+/* line 132, ../SASS/_font-face.scss */
+.icon-linkedin:before {
+  content: "\6c";
+}
+
+/* line 135, ../SASS/_font-face.scss */
+.icon-print:before {
+  content: "\75";
+}
+
+/* line 138, ../SASS/_font-face.scss */
+.icon-search:before {
+  content: "\7a";
+}
+
+/* line 141, ../SASS/_font-face.scss */
+.icon-search-2:before {
+  content: "\5a";
+}
+
 /**
  * Variables
  * Colors, font sizes and font families
@@ -1164,6 +1374,111 @@ span.pref::after {
   color: white;
 }
 
+/* line 57, ../SASS/_boxes.scss */
+.newsletter {
+  padding: 45px 30px 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 61, ../SASS/_boxes.scss */
+.span_4 .newsletter,
+.span_6 .newsletter {
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+/* line 63, ../SASS/_boxes.scss */
+.newsletter h2 {
+  float: left;
+  font: 52px/54px "Proxima N W01 Light", sans-serif;
+  color: #fff;
+  margin: 0;
+  max-width: 50%;
+}
+
+/* line 65, ../SASS/_boxes.scss */
+.span_4 .newsletter h2,
+.span_6 .newsletter h2 {
+  float: none;
+  font-size: 40px;
+  line-height: 42px;
+  margin: 0 0 30px;
+  max-width: none;
+}
+
+/* line 67, ../SASS/_boxes.scss */
+.newsletter .content {
+  float: right;
+  width: 45%;
+  margin-top: 20px;
+}
+
+/* line 69, ../SASS/_boxes.scss */
+.span_4 .newsletter .content,
+.span_6 .newsletter .content {
+  float: none;
+  width: auto;
+  margin-top: 0;
+}
+
+/* line 71, ../SASS/_boxes.scss */
+.newsletter p {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 10px;
+  text-align: right;
+}
+
+/* line 73, ../SASS/_boxes.scss */
+.span_4 .newsletter p,
+.span_6 .newsletter p {
+  margin: 0 0 15px;
+  text-align: left;
+}
+
+/* line 77, ../SASS/_boxes.scss */
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {
+  display: inline-block;
+  width: 49.9%;
+  margin: 0;
+  padding: 15px;
+  color: #7f9f94;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* line 78, ../SASS/_boxes.scss */
+.newsletter input[type="submit"] {
+  color: #fff;
+  background: #5d686f;
+}
+
+/* line 82, ../SASS/_boxes.scss */
+.span_4 .newsletter input[type="text"], .span_6 .newsletter input[type="text"],
+.span_4 .newsletter input[type="email"], .span_6 .newsletter input[type="email"],
+.span_4 .newsletter input[type="submit"], .span_6 .newsletter input[type="submit"] {
+  display: block;
+  width: 100%;
+}
+
+/* line 84, ../SASS/_boxes.scss */
+.newsletter .checkboxes {
+  margin-bottom: 20px;
+}
+
+/* line 85, ../SASS/_boxes.scss */
+.newsletter .checkboxes input {
+  vertical-align: top;
+  margin-top: 2px;
+}
+
 /**
  * Kurser-box
  */
@@ -1279,39 +1594,40 @@ span.pref::after {
 .news_single .byline .author {
   float: left;
   width: 40%;
+  padding-left: 5px;
 }
-/* line 106, ../SASS/_oldcontent.scss */
+/* line 107, ../SASS/_oldcontent.scss */
 .news_single .byline .author ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 112, ../SASS/_oldcontent.scss */
+/* line 113, ../SASS/_oldcontent.scss */
 .news_single .byline .contact {
   float: right;
   width: 55%;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 116, ../SASS/_oldcontent.scss */
+/* line 117, ../SASS/_oldcontent.scss */
 .news_single .byline .contact .person {
   float: left;
   width: 50%;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 120, ../SASS/_oldcontent.scss */
+/* line 121, ../SASS/_oldcontent.scss */
 .news_single .byline .contact .person img {
   float: left;
   width: 30px;
 }
-/* line 124, ../SASS/_oldcontent.scss */
+/* line 125, ../SASS/_oldcontent.scss */
 .news_single .byline .contact .person ul {
   margin: 0 0 0 50px;
   padding: 0;
   list-style: none;
 }
-/* line 133, ../SASS/_oldcontent.scss */
+/* line 134, ../SASS/_oldcontent.scss */
 .news_single .news-lf-cat-img {
   float: left;
   padding-right: 0.75em;
@@ -1319,7 +1635,7 @@ span.pref::after {
   line-height: 2em;
   color: #2cd4e8;
 }
-/* line 145, ../SASS/_oldcontent.scss */
+/* line 146, ../SASS/_oldcontent.scss */
 .news_single .subheader {
   font-size: 1.33333em;
   line-height: 2em;
@@ -1329,17 +1645,24 @@ span.pref::after {
   color: #333;
   margin: 0;
 }
-/* line 154, ../SASS/_oldcontent.scss */
+/* line 155, ../SASS/_oldcontent.scss */
 .news_single #share-sticky-wrapper {
   position: absolute;
-  left: -30px;
-  top: 0;
+  left: -24px;
+  top: 6px;
 }
 /* line 162, ../SASS/_oldcontent.scss */
 .news_single #share a {
   display: block;
+  padding: 3px;
+  color: #d2d2d2;
 }
-/* line 165, ../SASS/_oldcontent.scss */
+/* line 167, ../SASS/_oldcontent.scss */
+.news_single #share a:hover {
+  text-decoration: none;
+  color: #858585;
+}
+/* line 172, ../SASS/_oldcontent.scss */
 .news_single #share .facebook {
   text-indent: -119988px;
   overflow: hidden;
@@ -1350,7 +1673,7 @@ span.pref::after {
   width: 17px;
   height: 17px;
 }
-/* line 168, ../SASS/_oldcontent.scss */
+/* line 175, ../SASS/_oldcontent.scss */
 .news_single #share .twitter {
   text-indent: -119988px;
   overflow: hidden;
@@ -1361,7 +1684,7 @@ span.pref::after {
   width: 17px;
   height: 17px;
 }
-/* line 171, ../SASS/_oldcontent.scss */
+/* line 178, ../SASS/_oldcontent.scss */
 .news_single #share .email {
   text-indent: -119988px;
   overflow: hidden;

@@ -53,3 +53,33 @@
 	}
 }
 
+
+.newsletter {padding: 45px 30px 30px; margin-bottom: 20px;
+	@include clearfix;
+}
+.span_4 .newsletter,
+.span_6 .newsletter {padding: 30px; margin-bottom: 0;}
+
+.newsletter h2 {float: left; font: 52px/54px "Proxima N W01 Light", sans-serif; color: #fff; margin: 0; max-width: 50%;}
+.span_4 .newsletter h2,
+.span_6 .newsletter h2 {float: none; font-size: 40px; line-height: 42px; margin: 0 0 30px; max-width: none;}
+
+.newsletter .content {float: right; width: 45%; margin-top: 20px;}
+.span_4 .newsletter .content,
+.span_6 .newsletter .content {float: none; width: auto; margin-top: 0;}
+
+.newsletter p {font-size: 20px; line-height: 24px; margin: 0 0 10px; text-align: right;}
+.span_4 .newsletter p,
+.span_6 .newsletter p {margin: 0 0 15px; text-align: left;}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {display: inline-block; width: 49.9%; margin: 0; padding: 15px; color: #7f9f94; background: #fff; border: 0; border-radius: 0; text-align: left; font-size: 18px;}
+.newsletter input[type="submit"] {color: #fff; background: #5d686f;}
+
+.span_4 .newsletter input[type="text"], .span_6 .newsletter input[type="text"],
+.span_4 .newsletter input[type="email"], .span_6 .newsletter input[type="email"],
+.span_4 .newsletter input[type="submit"], .span_6 .newsletter input[type="submit"] {display: block; width: 100%;}
+
+.newsletter .checkboxes {margin-bottom: 20px;}
+.newsletter .checkboxes input {vertical-align: top; margin-top: 2px;}

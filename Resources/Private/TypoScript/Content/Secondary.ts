@@ -3,105 +3,18 @@ lib.content.secondary{
 
 	10 = TEXT
 	10.value (
-<!--
-	<div class="box contact-box bluegrey">
 
-		<h2>Kontaktinformation</h2>
+
+<div id="c382834" class="csc-default">
+	
+	<div class="newsletter bluegrey clearfix">
+		<h2>Skarpe analyser &amp; hurtige nyheder</h2>
 		<div class="content">
-			<img src="http://www.ftf.dk/uploads/tx_srfeuserregister/Bente_Sorgenfrey.jpg" width="65" height="75" border="0" alt="Bente Sorgenfrey" title="Bente Sorgenfrey">
-			<ul>
-				<li class="name">Bente Sorgenfrey</li>
-				<li class="jobtitle">Formand</li>
-				<li class="phone">Telefon: 3336 8801</li>
-				<li class="phone">Mobil: 4045 2645</li>
-				<li class="email"><a href="">beso@<span style="display:none;">remove-this.</span>ftf.dk</a></li>
-			</ul>
-			
-			<img src="http://www.ftf.dk/uploads/tx_srfeuserregister/Marianne_Heide.jpg" width="65" height="75" border="0" alt="Marianne Heide" title="Marianne Heide">
-			<ul>
-				<li class="name">Marianne Heide</li>
-				<li class="jobtitle">Personale- og administrationschef</li>
-				<li class="phone">Telefon: 3336 8803</li>
-				<li class="phone">Mobil: 2040 8803</li>
-				<li class="email"><a href="">mahe@<span style="display:none;">remove-this.</span>ftf.dk</a></li>
-			</ul>
-		</div>
-
-	</div>
-
-
-				<div class="ftf_kontakt">
-	
-		<div id="c192256" class="csc-default">
-	
-			
-
-
-	
-	<div class="tx-lfftfpeople-pi1">
+  		<p>Modtag nyhedsbrev</p>
+  		<div id="c382836" class="csc-default"><div class="tx-lfnyhedsbreve-pi1">
 		
 
-	<div class="kurser-box">
-		<div class="box-content">
-			<h3>Kontaktinformation</h3>			  
-			<div class="text">	
-				
-				
-						<div class="peopleimg"><img src="http://www.ftf.dk/uploads/tx_srfeuserregister/Bente_Sorgenfrey.jpg" width="65" height="75" border="0" alt="Bente Sorgenfrey" title="Bente Sorgenfrey"></div>
-						<p class="name">Bente Sorgenfrey</p>
-						<p class="jobtitle">Formand</p>
-						<p class="phone">Telefon: 3336 8801</p>
-						<p class="phone">Mobil: 4045 2645</p>
-						<p class="email"><a href="">beso@<span style="display:none;">remove-this.</span>ftf.dk</a></p>
-						<div class="csc-textpic-clear"></div>
-					
-						<div class="peopleimg"><img src="http://www.ftf.dk/uploads/tx_srfeuserregister/Marianne_Heide.jpg" width="65" height="75" border="0" alt="Marianne Heide" title="Marianne Heide"></div>
-						<p class="name">Marianne Heide</p>
-						<p class="jobtitle">Personale- og administrationschef</p>
-						<p class="phone">Telefon: 3336 8803</p>
-						<p class="phone">Mobil: 2040 8803</p>
-						<p class="email"><a href="">mahe@<span style="display:none;">remove-this.</span>ftf.dk</a></p>
-						<div class="csc-textpic-clear"></div>
-					
-			
-			</div>
-		</div>  
-	</div>
-	
-
-	</div>
-	
-	
-
-	
-			</div>
-	
-		</div>
-	-->			
-				
-	<!--  CONTENT ELEMENT, uid:379530/templavoila_pi1 [begin] -->
-		<div id="c379530" class="csc-default">
-
-	<div class="kurser-newsletter">
-			<h2>Skarpe analyser og hurtige nyheder</h2>
-			<div class="newsletter-text"><p class="bodytext">Tilmeld dig nyhedsbrevet!</p></div>
-			
-	<!--  CONTENT ELEMENT, uid:379531/list [begin] -->
-		<div id="c379531" class="csc-default">
-		<!--  Plugin inserted: [begin] -->
-			
-
-
-	<!--
-
-		BEGIN: Content of extension "lf_nyhedsbreve", plugin "tx_lfnyhedsbreve_pi1"
-
-	-->
-	<div class="tx-lfnyhedsbreve-pi1">
-		
-
-
-<form method="post" action="aktuelt/ftf-analyse/artikel/ledere-skal-have-mere-rum-til-innovation/?tx_lfnyhedsbreve_pi1%5Bsubsubmit%5D=1">
+<form method="post" action="forside/?tx_lfnyhedsbreve_pi1%5Bsubsubmit%5D=1">
 
 	
 
@@ -110,29 +23,22 @@ lib.content.secondary{
 
 
 	<input type="hidden" name="tx_lfnyhedsbreve_pi1[name]" class="email-hidden" value="email">
-	<div class="input-sub">
-		<label>Skriv e-mailadresse</label>
-		<input type="text" name="tx_lfnyhedsbreve_pi1[email]" value="" class="text">
-		<input type="submit" value="Tilmeld" class="submit">
-	</div>
 	<input type="hidden" name="tx_lfnyhedsbreve_pi1[html]" value="HTML">
+	
+	<input type="text" name="tx_lfnyhedsbreve_pi1[email]" placeholder="Din e-mail adresse"><input type="submit" value="Tilmeld mig i en fart">
+	
 </form>
 
 
 	</div>
-	
-	<!-- END: Content of extension "lf_nyhedsbreve", plugin "tx_lfnyhedsbreve_pi1" -->
-
-	
-		<!--  Plugin inserted: [end] -->
-			</div>
-	<!--  CONTENT ELEMENT, uid:379531/list [end] -->
-		
-			<div class="stamp"></div>
 	</div>
-
+		</div>
+	</div>
+	
 </div>
-	<!--  CONTENT ELEMENT, uid:379530/templavoila_pi1 [end] -->
+
+
+	
 		
 	<!--  CONTENT ELEMENT, uid:382799/image [begin] -->
 		<div id="c382799" class="csc-default">
