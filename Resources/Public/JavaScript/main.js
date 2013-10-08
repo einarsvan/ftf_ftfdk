@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	/**
+	 * Sticky
+	 */
+	$('#share').sticky({
+		topSpacing: 20
+	});
+
+
 	if($(window).width() <= 700){
 		// $('#mobilenav').mmenu();
 		// $('h1').css('border','1px solid red');

@@ -1,0 +1,55 @@
+/**
+ * Boxes
+ */
+
+.box {
+	padding: 30px;
+
+	h2,h3 {
+		@include adjust-font-size-to(30px);
+		font-family: $sans;
+	}
+
+	/**
+	 * Contact box
+	 */
+	&.contact-box{
+
+		ul {
+			margin: 0 0 0 33%;
+			padding: 0;
+			list-style: none;
+
+			&:last-child li:last-child {
+				margin-bottom: 0;
+			}
+		}
+		li {
+			margin: 0.25em 0 0;
+		}
+		.name {
+			font-weight: bold;
+			// @include adjust-font-size-to(12px);
+			margin: 0 0 0.5em;
+		}
+		.email {
+			margin-bottom: 1em;
+		}
+		img {
+			margin: 0 1em 0 0;
+			float: left;
+		}
+	}
+	
+}
+
+/**
+ * Box colors
+ */
+.bluegrey {
+	background: $bluegrey;
+	h2,h3 {
+		color: white;	
+	}
+}
+

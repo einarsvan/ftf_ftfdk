@@ -1,1 +1,39 @@
 @include establish-baseline;
+
+body {
+	font-family: $sans; 
+	color: $fontcolor; 
+	margin: 0;
+}
+
+h1 {
+	@include adjust-font-size-to(100px);
+}
+
+h2 {
+	@include adjust-font-size-to(42px);
+	margin: 0 0 0.5em;
+}
+h3 {
+	@include adjust-font-size-to(42px);
+}
+h4,h5,h6 {
+	@include adjust-font-size-to(22px);
+}
+
+a {
+	text-decoration: none; 
+	color: #15d1e8;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $serif;
+	font-weight: normal;
+	line-height: 0.95;
+	a {
+		color: #000;
+	}
+}

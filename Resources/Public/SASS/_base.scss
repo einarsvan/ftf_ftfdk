@@ -12,10 +12,18 @@ $green: #84c708;
 $red: #fd5555;
 $yellow: #ffbe00;
 $darkblue: #6d9499;
+$bluegrey: #93a4b0;
+
+$bordercolor: #d2d2d2;
+$fontcolor: #2b2b2b;
 
 // Fonts, using Vertical Rythm
 $base-font-size: 15px;
 $base-line-height: 20px;
+
+// Font families
+$serif: Georgia, "Times New Roman", serif;
+$sans: "Proxima N W01 Reg", Arial, sans-serif;
 
 // Susy grid
 $total-columns  : 4;
@@ -44,3 +52,9 @@ $full: 12;
     position: absolute;
     width: 1px;
 }
+
+/**
+ * Icons
+ */
+// @import "Icons/*.gif";
+// @include all-Icons-sprites;

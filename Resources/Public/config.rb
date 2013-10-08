@@ -5,7 +5,8 @@ require "susy"
 
 # Set this to the root of your project when deployed:
 #http_path = "/typo3conf/ext/ftf_ftfdk/Resources/Public/"
-http_path = "/"
+#http_path = "/"
+http_path = "/typo3conf/ext/ftf_ftfdk/Resources/Public/"
 environment = :development
 css_dir = "CSS"
 sass_dir = "SASS"

@@ -2,3 +2,25 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+span.sectioncolor {
+	color: #28c0da;
+}
+span.pref::after {
+	content: " |"; 
+	color: $fontcolor;
+}
+.black span.pref::after,
+.blue span.pref::after,
+.red span.pref::after,
+.green span.pref::after {
+	color: white;
+}
+
+.subheader p {
+	color: #333;
+}
+
+.csc-frame-rulerBefore {
+	border-top: 1px solid #ccc;
+}

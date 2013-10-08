@@ -1,0 +1,65 @@
+/**
+ * Header
+ */
+
+header {
+
+	margin-bottom: 20px;
+	
+	/* Logo */
+	.logo {
+		float: left;
+		width: 70%; 
+		margin: 20px 0;
+	}
+	.logo h1 {
+		font-family: $sans;
+		font-size: 1em;
+		line-height: 1;
+		vertical-align: bottom;
+		margin: 0;
+		padding: 0;
+		font-weight: normal;
+		color: grey;
+	}
+	.logo span {
+		@include replace-text-with-dimensions("logo.png");
+		display: inline-block; 
+		// width: 103px; 
+		// height: 36px; 
+		margin-right: 20px; 
+		// background: url(../Images/logo.png) 0 0 no-repeat;
+	}
+	.logo a {
+		color: grey;
+	}
+
+	/* Search */
+	.search {
+		float: right;
+		margin-top: 20px;
+		width: 23%;
+	}
+	.search form {
+		position: relative;
+	}
+	.search input[type="text"] {
+		position: absolute; 
+		top: 0; 
+		right: 0; 
+		width: 100%; 
+		padding: 5px 45px 5px 5px; 
+		border: 1px solid $bordercolor; 
+		border-radius: 0;
+	}
+	.search button {
+		position: absolute; 
+		top: 6px; 
+		right: 12px; 
+		height: 17px; 
+		width: 27px; 
+		border: 1px solid $bordercolor; 
+		border-width: 0 0 0 1px;
+		background: #fff url(../Images/icons.png) 10px -937px no-repeat;
+	}
+}

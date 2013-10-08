@@ -23,15 +23,12 @@
 @import "typography";
 
 /* Content */
-@import "content";
+@import "header";
 @import "navigation";
-
-/* Sections */
-// @import "header";
+@import "content";
+@import "boxes";
+@import "oldcontent"; // This is the old styling
 // @import "footer";
-
-/* Content elements */
-//??
 
 /* Basic html modules: buttons, tables, forms etc. */
 // @import "tables";

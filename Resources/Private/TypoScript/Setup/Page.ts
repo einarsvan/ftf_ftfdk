@@ -15,6 +15,8 @@ page{
 			content < styles.content.get
 			banner < styles.content.get
 			banner.select.where = colPos = 1
+			bottom_content < styles.content.get
+			bottom_content.select.where = colPos = 2
 		}
 		
 		file.stdWrap.cObject = CASE

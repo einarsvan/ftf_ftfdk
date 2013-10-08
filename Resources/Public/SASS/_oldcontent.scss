@@ -1,0 +1,176 @@
+/**
+ * Kurser-box
+ */
+.kurser-box {
+	border-top: 2px solid #a8bcbe;
+	background: #fff;
+	padding-top: 1px;
+	margin: 0 0 15px;
+	clear: both;
+	width: 301px;
+	float: right;
+	.box-content {
+		background: #e0eaeb;
+		padding: 5px 10px 10px;
+	}
+	h3 {
+		padding-left: 6px;
+	}
+	.text {
+		background: #fff;
+		padding: 12px 8px 8px;
+	}
+}
+
+#rightcol .kurser-box .text,
+#secondary .kurser-box .text{
+	padding: 12px 10px 8px;
+	margin: 0 0 4px 0;
+}
+
+/**
+ * FTF People
+ */
+.tx-lfftfpeople-pi1 {
+	
+	h2,h3{
+		@include adjust-font-size-to(20px);
+	}	
+
+	.text{
+
+		p {
+			margin: 0;
+		}
+		p.name {
+			font-weight: bold;
+			font-size: 12px;
+			margin-bottom: 7px;
+			color: #15d1e8;
+		}
+		p.jobtitle,
+		p.phone,
+		p.email {
+			margin-top: 2px;
+		}
+
+		div.peopleimg {
+			margin: 0 10px 0 0;
+			float: left;
+			width: 65px;
+			height: 83px;
+			position: relative;
+		}
+	}
+}
+
+/**
+ * News single
+ */
+
+.news_single {
+	position: relative;
+
+	.news-single-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	.toolbar,
+	.byline {
+		margin-top: 1em;
+		border-bottom: 1px solid $bordercolor;
+		border-top: 1px solid $bordercolor;
+		padding: 0.5em 0;
+	}
+	
+	// Nyt!
+	.byline {
+		float: left;
+		width: 100%;
+		position: relative;
+		p {
+			margin: 0;
+			@include adjust-font-size-to(12px);
+			color: lighter($fontcolor, 10%);
+		}
+		li {
+			@include adjust-font-size-to(13px);
+		}
+		.name {
+			font-weight: bold;
+		}
+		.author {
+			float: left;
+			width: 40%;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+		}
+		.contact {
+			float: right;
+			width: 55%;
+			@include clearfix;
+			.person {
+				float: left; 
+				width: 50%;
+				@include clearfix;
+				img {
+					float: left;
+					width: 30px;
+				}
+				ul {
+					margin: 0 0 0 50px;
+					padding: 0;
+					list-style: none;
+				}
+			}
+		}
+	}
+
+	.news-lf-cat-img {
+		float: left;
+		padding-right: 0.75em;
+		@include adjust-font-size-to(20px);
+		color: $ftfblue;
+	}
+
+	p {
+		// @include adjust-font-size-to(16px); ???
+		// line-height: 1.43 !important;
+	}
+
+	.subheader {
+		@include adjust-font-size-to(20px);
+		@include adjust-leading-to(1);
+		font-family: $serif;
+		font-weight: normal;
+		color: #333;
+		margin: 0;
+	}
+
+	#share-sticky-wrapper {
+		position: absolute;
+		left: -30px;
+		top: 0;
+		// width: 30px;
+	}
+	#share {
+		
+		a {
+    		display: block;
+		}
+		.facebook {
+			@include replace-text-with-dimensions("Icons/facebook.gif");
+		}
+		.twitter {
+			@include replace-text-with-dimensions("Icons/twitter.gif");
+		}
+		.email {
+			@include replace-text-with-dimensions("Icons/print.gif");
+		}
+	}
+
+}

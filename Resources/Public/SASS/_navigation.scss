@@ -176,3 +176,16 @@
 	.lvl3 span {border-color: $darkblue;}
 	.lvl1 li.act a {background: $darkblue;}
 }
+
+
+/**
+ * Mobile menu
+ */
+
+#mobilenav{
+	
+	@include at-breakpoint($medium){
+		display: none;
+	}
+
+}
