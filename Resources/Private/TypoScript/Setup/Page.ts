@@ -15,8 +15,8 @@ page{
 			content < styles.content.get
 			banner < styles.content.get
 			banner.select.where = colPos = 1
-			bottom_content < styles.content.get
-			bottom_content.select.where = colPos = 2
+			tertiary < styles.content.get
+			tertiary.select.where = colPos = 2
 		}
 		
 		file.stdWrap.cObject = CASE
@@ -27,6 +27,8 @@ page{
 			# Set the default Template
 			default = TEXT
 			default.value = EXT:ftf_ftfdk/Resources/Private/Templates/Main.html
+			2 < .default
+			2.value = EXT:ftf_ftfdk/Resources/Private/Templates/2col.html
 		}
 	}
 }

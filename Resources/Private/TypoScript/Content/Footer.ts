@@ -3,7 +3,8 @@ lib.content.footer{
 	
 	10 = TEXT
 	10.value(
-<div id="footer">
+<footer id="footer">
+<div class="container">
 	<!--  CONTENT ELEMENT, uid:2/text [begin] -->
 		<div id="c2" class="csc-default" >
 		<!--  Text: [begin] -->
@@ -12,5 +13,6 @@ lib.content.footer{
 			</div>
 	<!--  CONTENT ELEMENT, uid:2/text [end] -->
 		</div>
+</footer>
 	)
 }

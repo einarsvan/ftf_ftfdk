@@ -2,6 +2,7 @@ lib.navigation.mobile = COA
 lib.navigation.mobile{
 	10 = TEXT
 	10.value(
+		<div id="mobilenav">
 		<form>
 			<input type="search" placeholder="Indtast søgeord">
 			<input type="submit" value="Søg">
@@ -30,5 +31,6 @@ lib.navigation.mobile{
 			<li><a href="iconbar.html">Iconbar</a></li>
 			<li><a href="dragopen.html">Drag/swipe the menu open</a></li>
 		</ul>
+		</div>
 	)
 }

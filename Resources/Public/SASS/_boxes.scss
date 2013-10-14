@@ -6,14 +6,22 @@
 	padding: 30px;
 
 	h2,h3 {
-		@include adjust-font-size-to(30px);
+		@include adjust-font-size-to(26px);
+		@include adjust-leading-to(1);
 		font-family: $sans;
+
+		&:before {
+			@include font-icon("\21");
+			display: inline-block;
+			font-size: 0.9em;
+			margin-right: 0.3em;
+		}
 	}
 
 	/**
 	 * Contact box
 	 */
-	&.contact-box{
+	&.contact-box {
 
 		ul {
 			margin: 0 0 0 33%;
@@ -40,12 +48,31 @@
 			float: left;
 		}
 	}
+
+	/**
+	 * Graphs
+	 */
+	&.graph {
+		h2,h3 {
+			&:before {
+				@include font-icon("\22");
+			}
+		}
+	}
 	
 }
 
 /**
  * Box colors
  */
+.blue {
+	background: $ftfblue;
+	h2,h3,p,li {
+		color: white;
+	}
+
+}
+
 .bluegrey {
 	background: $bluegrey;
 	h2,h3 {
@@ -53,6 +80,19 @@
 	}
 }
 
+.lightgrey {
+	background: #f0f4f6;
+}
+
+.darkgrey {
+	background: $darkgrey;
+	h2,h3 {
+		color: $ftfblue;
+	}
+	p,li {
+		color: $bordercolor;
+	}
+}
 
 .newsletter {padding: 45px 30px 30px; margin-bottom: 20px;
 	@include clearfix;

@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/**
+ * Article
+ */
+
+article {
+	position: relative;
+	
+	.main-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		figcaption {
+
+		}
+	}
+	header {
+		margin-bottom: 2em;
+	}
+	h1 {
+		@include adjust-font-size-to(45px);
+		line-height: 0.95;
+		margin: 0.5em 0 0.25em;
+	}
+	h2 {
+		@include adjust-font-size-to(20px);
+		@include adjust-leading-to(1);
+	}
+	.subheader {
+		font-family: $serif;
+		font-weight: normal;
+		color: #333;
+		margin: 0;
+	}
+	.category {
+		float: left;
+		padding-right: 0.75em;
+		@include adjust-font-size-to(20px);
+		line-height: 1;
+		color: $ftfblue;
+	}
+	.byline {
+		// float: left;
+		position: relative;
+		// width: 100%;
+		margin-top: 1em;
+		border-bottom: 1px solid $bordercolor;
+		border-top: 1px solid $bordercolor;
+		padding: 0.5em 0;
+		@include pie-clearfix;
+		p {
+			margin: 0;
+			@include adjust-font-size-to(12px);
+			color: lighter($fontcolor, 10%);
+		}
+		li {
+			@include adjust-font-size-to(13px);
+		}
+		.name {
+			font-weight: bold;
+		}
+		.author {
+			float: left;
+			width: 40%;
+			padding-left: 5px;
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+		}
+		.contact {
+			float: right;
+			width: 55%;
+			@include clearfix;
+			.person {
+				float: left; 
+				width: 50%;
+				@include clearfix;
+				img {
+					float: left;
+					width: 30px;
+				}
+				ul {
+					margin: 0 0 0 50px;
+					padding: 0;
+					list-style: none;
+				}
+			}
+		}
+	}
+	#share-sticky-wrapper {
+		position: absolute;
+		left: -24px; // Gives a 5px margin from content
+		top: 6px;
+	}
+	#share {	
+		a {
+    		display: block;
+    		padding: 3px;
+    		color: $bordercolor;
+    		&:hover {
+    			text-decoration: none;
+    			color: darken($bordercolor, 30%);
+    		}
+		}
+		.facebook {
+			@include replace-text-with-dimensions("Icons/facebook.gif");
+		}
+		.twitter {
+			@include replace-text-with-dimensions("Icons/twitter.gif");
+		}
+		.email {
+			@include replace-text-with-dimensions("Icons/print.gif");
+		}
+	}
+
+	p {
+
+	}
+	a {
+		color: #1d8b98;
+
+	}
+	.link-item {
+		&:before {
+			content: "Læs også";
+			background: #8b8b8b;
+			color: white;
+			padding: 4px 5px;
+			font-size: 12px;
+			line-height: 21px;
+			margin-right: 5px;
+		}
+
+	}
+
+	/**
+	 * Boxes in articles
+	 */
+	
+	.box {
+
+		&.small {
+			float: right;
+			width: 40%;
+			margin: 0 0 1em 1em;
+		}
+	}
+
+	/**
+	 * Category links in bottom
+	 */
+	.tx-lfttnewscatlinks-pi1 {
+		background: $bluegrey;
+		
+		ul {
+			padding: 2em 1em;
+			&:before {
+				content: "Emneord";
+				background: #8b8b8b;
+				color: white;
+				padding: 4px 5px;
+				font-size: 12px;
+				line-height: 21px;
+				margin-right: 5px;
+			}
+		}
+		li {
+			display: inline-block;
+			padding: 0;
+			
+			a {
+				color: black;
+			}
+			a:after{
+				content:",";
+			}
+			&:last-child a:after{
+				content:"";
+			}
+		}
+		
+	}
+}

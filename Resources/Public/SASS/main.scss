@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * FTF.dk 
  * Main SASS file
@@ -9,8 +10,8 @@
 @import "susy";
 
 /* Base settings for colors, sizes, fonts, etc. */
-@import "font-face";
 @import "base";
+@import "font-face";
 
 /* Normalize the css */
 @import "normalize";
@@ -27,6 +28,7 @@
 @import "navigation";
 @import "content";
 @import "boxes";
+@import "article";
 @import "oldcontent"; // This is the old styling
 // @import "footer";
 

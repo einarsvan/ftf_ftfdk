@@ -1,0 +1,14 @@
+<f:layout name="Main" />
+<f:section name="content">
+	<div class="container">
+		<div id="primary" class="span_8">
+			{content -> f:format.raw()}
+		</div>
+		<div id="secondary" class="span_4">
+			<f:cObject typoscriptObjectPath="lib.content.secondary"/>
+		</div>	
+	</div>
+	<div id="tertiary">
+		{tertiary -> f:format.raw()}
+	</div>
+</f:section>

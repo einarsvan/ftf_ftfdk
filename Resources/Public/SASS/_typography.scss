@@ -37,3 +37,37 @@ h1,h2,h3,h4,h5,h6 {
 		color: #000;
 	}
 }
+
+.box.quote {
+	position: relative;
+	padding: 0;
+	&:before {
+		content: "\51";	
+		font-family: 'FTF';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		position: absolute;
+		top: 0.1em;
+		left: 30px;
+		font-size: 35px;
+		color: $bluegrey;
+	}
+	blockquote {
+		@include adjust-font-size-to(22px);
+		@include adjust-leading-to(1);
+		margin: 28px 50px 0 84px;
+		color: #464646;
+	}
+	.cite {
+		@include adjust-font-size-to(12px);
+		@include background-image(image-url("seperator.png"));
+		background-repeat: repeat-x;
+		margin: 5px 50px 20px 84px;
+		padding: 1em 0 0;
+	}
+}
