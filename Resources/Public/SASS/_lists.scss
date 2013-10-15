@@ -9,9 +9,10 @@
 		color: #a2a2a2;
 		margin: 0 0 1em;
 		@include adjust-font-size-to(12px);
+		line-height: 1;
 	}
 	img {
-		margin-bottom: 1em;
+		margin-bottom: 10px;
 	}
 	h2 {
 		color: #313131;
@@ -47,27 +48,6 @@
 	
 	.black h2 {
 		color: white;
-	}
-
-	// Headers only
-	&.headersonly .news-item {
-		position: relative;
-		padding: 10px 60px 0 30px; 
-		margin: 0; 
-		border-bottom: 1px solid #e5ecef; 
-		&:last-child {
-			border: 0;
-		}
-		&:before {
-			@include font-icon("\2192");
-			position: absolute;
-			left: 0px;
-			top: 14px;
-			background: $bluegrey;
-			font-size: 10px;
-			padding: 3px;
-			color: white;
-		}
 	}
 }
 
@@ -107,6 +87,69 @@ ul.related {
 }
 
 /**
+ * News items
+ */
+.news-item {
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	@include clearfix;
+
+	h2 {
+		@include adjust-font-size-to(20px);
+		line-height: 1.05;
+		margin: 0.5em 0 1em;
+	}
+
+	&:last-child {
+		margin-bottom: 0; 
+		border: 0; 
+		padding-bottom: 0;
+	}
+
+	&.noimage {
+		.byline {
+			margin-top: 0;
+		}
+		h2 {
+			@include adjust-font-size-to(40px);
+			line-height: 1.05;
+			margin: 0.25em 0 0.5em;
+		}
+		h2 a {
+			color: #313131;
+		}
+	}
+}
+
+
+/**
+ * Headers only lists
+ */
+.headersonly {
+	.news-item {
+		position: relative;
+		padding: 10px 60px 0 30px; 
+		margin: 0; 
+		border-bottom: 1px solid #e5ecef; 
+		&:last-child {
+			border: 0;
+		}
+		&:before {
+			@include font-icon("\2192");
+			position: absolute;
+			left: 0px;
+			top: 14px;
+			background: $bluegrey;
+			font-size: 10px;
+			padding: 3px;
+			color: white;
+		}
+	}
+}
+
+
+/**
  * Span_8
  */
 .span_8 {
@@ -115,9 +158,12 @@ ul.related {
 	.list {
 		h2 {
 			margin: 15px 0 20px;
+			@include adjust-font-size-to(45px);
+			line-height: 1.05;
 		}
 		.noimage h2 {
 			@include adjust-font-size-to(90px);
+			line-height: 1.05;
 		}
 		
 		// Black lists inside span_8
@@ -141,17 +187,48 @@ ul.related {
 
 }
 
+/**
+ * Span_6
+ */
+.span_6 {
+	.list {
+		h2 {
+			@include adjust-font-size-to(40px);
+			line-height: 1.05;
+			color: #313131;
+			margin: 10px 0 20px;
+		}
+		.noimage h2 {
+			@include adjust-font-size-to(50px);
+			line-height: 1.05;
+			margin-top: 20px;
+		}
+	}
+}
 
+/**
+ * Span_4
+ */
+.span_4 {
+	.news-list h2 {
+		margin-top: 10px;
+	}
+}
+
+/**
+ * Color variations
+ */
 
 /* Light blue list-header */
 .lightblue {
+	background: $lightblue;
 	h2.list-header {
 		background-image: url(../Images/header-lines-greybg.png); 
 		margin-left: 20px; 
 		margin-right: 20px;
 
 		span {
-			background: #f0f4f6;
+			background: $lightblue;
 		}
 	}
 }
