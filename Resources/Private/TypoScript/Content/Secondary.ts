@@ -48,87 +48,70 @@ lib.content.secondary{
 			</div>
 	<!--  CONTENT ELEMENT, uid:382799/image [end] -->
 
-<div class="box list bluegrey">
-	<h2>Mest læste Analyser</h2>
-	<div class="content">
-		<ul>
-			<li>
-				<h3><a href="aktuelt/ftf-analyse/artikel/overdreven-kontrol-koster-milliarder/" title="Overdreven kontrol koster milliarder">Overdreven kontrol koster milliarder</a> <span>09.09.13</span></h3>
-				<div class="csc-textpic-clear"></div>		
-			</li>
-		
-			<li>
-				<h3><a href="aktuelt/ftf-analyse/artikel/tillid-til-ansatte-giver-mere-offentlig-sektor-for-pengene/" title="Tillid til ansatte giver mere offentlig sektor for pengene">Tillid til ansatte giver mere offentlig sektor for pengene</a> <span>20.06.13</span></h3>
-				<div class="csc-textpic-clear"></div>		
-			</li>
-		
-			<li>
-				<h3><a href="aktuelt/ftf-analyse/artikel/ledere-medarbejderne-vigtigste-drivkraft-til-forandring/" title="Ledere: Medarbejderne vigtigste drivkraft til forandring">Ledere: Medarbejderne vigtigste drivkraft til forandring</a> <span>26.06.13</span></h3>
-				<div class="csc-textpic-clear"></div>		
-			</li>
-		
-			<li>
-				<h3><a href="aktuelt/ftf-analyse/artikel/hver-tredje-arbejdsplads-glemmer-det-psykiske-arbejdsmiljoe/" title="Hver tredje arbejdsplads glemmer det psykiske arbejdsmiljø">Hver tredje arbejdsplads glemmer det psykiske arbejdsmiljø</a> <span>03.07.13</span></h3>
-				<div class="csc-textpic-clear"></div>		
-			</li>
-		
-			<li>
-				<h3><a href="aktuelt/ftf-analyse/artikel/praktikvejledere-skal-paa-skolebaenken/" title="Praktikvejledere skal på skolebænken">Praktikvejledere skal på skolebænken</a> <span>18.06.13</span></h3>
-				<div class="csc-textpic-clear"></div>		
-			</li>	
-		</ul>
-	</div>
-</div>
-		
-	<!--  CONTENT ELEMENT, uid:379555/list [begin] -->
-		<div id="c379555" class="csc-default">
-		<!--  Plugin inserted: [begin] -->
-			
-<div class="kurser-box news-related">
-<div class="box-content">
-	<h3>Mest læste Analyser</h3>
-	<ul class="related-content">
-		
-				<li>
-					<h3><a href="aktuelt/ftf-analyse/artikel/overdreven-kontrol-koster-milliarder/" title="Overdreven kontrol koster milliarder">Overdreven kontrol koster milliarder</a> <span>09.09.13</span></h3>
-					<div class="csc-textpic-clear"></div>		
-				</li>
-			
-				<li>
-					<h3><a href="aktuelt/ftf-analyse/artikel/tillid-til-ansatte-giver-mere-offentlig-sektor-for-pengene/" title="Tillid til ansatte giver mere offentlig sektor for pengene">Tillid til ansatte giver mere offentlig sektor for pengene</a> <span>20.06.13</span></h3>
-					<div class="csc-textpic-clear"></div>		
-				</li>
-			
-				<li>
-					<h3><a href="aktuelt/ftf-analyse/artikel/ledere-medarbejderne-vigtigste-drivkraft-til-forandring/" title="Ledere: Medarbejderne vigtigste drivkraft til forandring">Ledere: Medarbejderne vigtigste drivkraft til forandring</a> <span>26.06.13</span></h3>
-					<div class="csc-textpic-clear"></div>		
-				</li>
-			
-				<li>
-					<h3><a href="aktuelt/ftf-analyse/artikel/hver-tredje-arbejdsplads-glemmer-det-psykiske-arbejdsmiljoe/" title="Hver tredje arbejdsplads glemmer det psykiske arbejdsmiljø">Hver tredje arbejdsplads glemmer det psykiske arbejdsmiljø</a> <span>03.07.13</span></h3>
-					<div class="csc-textpic-clear"></div>		
-				</li>
-			
-				<li>
-					<h3><a href="aktuelt/ftf-analyse/artikel/praktikvejledere-skal-paa-skolebaenken/" title="Praktikvejledere skal på skolebænken">Praktikvejledere skal på skolebænken</a> <span>18.06.13</span></h3>
-					<div class="csc-textpic-clear"></div>		
-				</li>
-			
-	</ul>
-</div>
+
+<div class="news-list list headersonly">
+	<h2 class="list-header"><span>Mest læste</span></h2>
+  
+  	<div class="news-item">
+  		<span class="date">08.10.13</span>
+  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+  	</div>
+    
+  	<div class="news-item">
+  		<span class="date">09.10.13</span>
+  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+  	</div>
+    
+  	<div class="news-item">
+  		<span class="date">08.10.13</span>
+  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+  	</div>
+    
+  	<div class="news-item">
+  		<span class="date">08.10.13</span>
+  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+  	</div>
+    
 </div>
 
-		<!--  Plugin inserted: [end] -->
-			</div>
-	<!--  CONTENT ELEMENT, uid:379555/list [end] -->
+
+		
+
 		
 	<!--  CONTENT ELEMENT, uid:381937/textpic [begin] -->
 		<div id="c381937" class="csc-default">
 		<!--  Image block: [begin] -->
-			<div class="csc-textpic csc-textpic-intext-right"><div class="csc-textpic-imagewrap csc-textpic-single-image"><a href="om-ftf/bentes-side/" target="_self"><img src="http://www.ftf.dk/uploads/pics/Bentes_side_01.png" width="301" height="245" border="0" alt=""></a></div><div class="csc-textpic-text"></div></div><div class="csc-textpic-clear"><!-- --></div>
+			<div class="csc-textpic csc-textpic-center csc-textpic-above"><div class="csc-textpic-imagewrap csc-textpic-single-image"><a href="om-ftf/bentes-side/" target="_self"><img src="http://www.ftf.dk/uploads/pics/Bentes_side_01.png" width="301" height="245" border="0" alt=""></a></div><div class="csc-textpic-text"></div></div><div class="csc-textpic-clear"><!-- --></div>
 		<!--  Image block: [end] -->
 			</div>
 	<!--  CONTENT ELEMENT, uid:381937/textpic [end] -->
+
+<div class="box bluegrey">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
 		
 	<!--  CONTENT ELEMENT, uid:379477/image [begin] -->
 		<div id="c379477" class="csc-default">
@@ -138,7 +121,221 @@ lib.content.secondary{
 			</div>
 	<!--  CONTENT ELEMENT, uid:379477/image [end] -->
 			
-			
+<div class="box black">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box ftfblue">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box orange">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box blue">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box green">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box red">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box yellow">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
+
+<div class="box bluegreen">
+	<div class="news-list list headersonly">
+		<h2 class="list-header"><span>Mest læste</span></h2>
+	  
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/danskerne-har-brug-for-mere-efteruddannelse/" title="Danskerne har brug for mere efteruddannelse">Danskerne har brug for mere efteruddannelse</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">09.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/goer-fagforeningerne-til-sociale-faellesskaber/" title="Video: Gør fagforeninger til sociale fællesskaber">Video: Gør fagforeninger til sociale fællesskaber</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/doer/" title="Lemp finanspolitikken med fem milliarder">Lemp finanspolitikken med fem milliarder</a></h3>
+	  	</div>
+	    
+	  	<div class="news-item">
+	  		<span class="date">08.10.13</span>
+	  		<h3><a href="aktuelt/ftf-nyhed/artikel/nye-regler-vil-ramme-syge-borgere-tilfaeldigt/" title="Nye regler vil ramme syge borgere tilfældigt">Nye regler vil ramme syge borgere tilfældigt</a></h3>
+	  	</div>
+	    
+	</div>
+</div>
 
 	)
 }

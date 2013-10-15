@@ -1,0 +1,308 @@
+/**
+ * Lists
+ */
+.list {
+
+	// Byline
+	.byline {
+		display: block;
+		color: #a2a2a2;
+		margin: 0 0 1em;
+		@include adjust-font-size-to(12px);
+	}
+	img {
+		margin-bottom: 1em;
+	}
+	h2 {
+		color: #313131;
+	}
+	h3 {
+		@include adjust-font-size-to(15px);
+		font-family: $sans;
+		color: black;
+		margin: 0 0 1em;
+	}
+	.subheader p {
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	span.date {
+		@include adjust-font-size-to(12px);
+		color: #a2a2a2;
+	}
+
+	.noimage img,
+	.nosub .subheader {display: none;}
+
+	// Colors
+	.black .byline .cat,
+	.red .byline .cat,
+	.green .byline .cat,
+	.lightblue .byline .cat,
+	.bluegrey .byline .cat {
+		color: #a2a2a2 !important; // For colors we must override with !important
+	}
+	
+	.black h2 {
+		color: white;
+	}
+
+	// Headers only
+	&.headersonly .news-item {
+		position: relative;
+		padding: 10px 60px 0 30px; 
+		margin: 0; 
+		border-bottom: 1px solid #e5ecef; 
+		&:last-child {
+			border: 0;
+		}
+		&:before {
+			@include font-icon("\2192");
+			position: absolute;
+			left: 0px;
+			top: 14px;
+			background: $bluegrey;
+			font-size: 10px;
+			padding: 3px;
+			color: white;
+		}
+	}
+}
+
+/**
+ * List headers
+ */
+h2.list-header,
+.span_8 h2.list-header {
+	@include adjust-font-size-to(19px);
+	font-family: $sans;
+	line-height: 1;
+	text-transform: uppercase; 
+	margin: 0 0 20px; // use leading??? Compass typography
+	background: url(../Images/header-lines.png) 0 2px repeat-x;
+	
+	span {
+		background: white; 
+		display: inline-block; 
+		padding-right: 30px;
+	}
+	&:before {
+		display: none;
+	}
+}
+
+/**
+ * UL related
+ */
+ul.related {
+	@include reset-list;
+	margin-top: 1em;
+	a {
+		display: block; 
+		color: #0f0f0f; 
+		padding: 3px 0 3px 2px;
+	}
+}
+
+/**
+ * Span_8
+ */
+.span_8 {
+
+	// Lists inside span_8
+	.list {
+		h2 {
+			margin: 15px 0 20px;
+		}
+		.noimage h2 {
+			@include adjust-font-size-to(90px);
+		}
+		
+		// Black lists inside span_8
+		.black ul.related li a {
+			color: white;
+		}
+	}
+
+	// UL related inside span_8
+	ul.related {
+		li a {
+			padding: 12px 0 11px 2px; 
+			border-bottom: 1px solid #3e3e3e;
+		}
+		li:first-child a,
+		li:nth-child(2) a {
+			@include adjust-font-size-to(22px);
+			padding-bottom: 0.5em;
+		}
+	}
+
+}
+
+
+
+/* Light blue list-header */
+.lightblue {
+	h2.list-header {
+		background-image: url(../Images/header-lines-greybg.png); 
+		margin-left: 20px; 
+		margin-right: 20px;
+
+		span {
+			background: #f0f4f6;
+		}
+	}
+}
+
+.bluegrey {
+	h2.list-header {
+		background-image: url(../Images/headerlines-whitetrans.gif);
+		color: white;
+		span {
+			background: $bluegrey;
+		}
+	}
+	.list {
+		span.date {
+			color: $fontcolor;
+		}
+		&.headersonly .news-item {
+			border-color: $fontcolor; 
+			&:before {
+				background: $fontcolor;
+			}
+		}
+	}
+}
+.ftfblue,
+.blue,
+.black,
+.orange,
+.red,
+.green,
+.bluegreen,
+.yellow {
+	h2.list-header {
+		background-image: url(../Images/headerlines-whitetrans.gif);
+		color: white;
+		span {
+			background: $ftfblue;
+		}
+	}
+	h2 a,
+	h3 a {
+		color: white;
+	}
+	.list {
+		span.date {
+			color: white;
+		}
+		&.headersonly .news-item {
+			border-color: white;
+			&:before {
+				background: white;
+				color: $ftfblue;
+			}
+		}
+	}
+}
+.blue {
+	h2.list-header {
+		span {
+			background: $blue;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $blue;
+			}
+		}
+	}
+}
+.black {
+	h2.list-header {
+		span {
+			background: black;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: black;
+			}
+		}
+	}
+}
+.orange {
+	h2.list-header {
+		span {
+			background: $orange;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $orange;
+			}
+		}
+	}
+}
+.red {
+	h2.list-header {
+		span {
+			background: $red;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $red;
+			}
+		}
+	}
+}
+.green {
+	h2.list-header {
+		span {
+			background: $green;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $green;
+			}
+		}
+	}
+}
+.bluegreen {
+	h2.list-header {
+		span {
+			background: $bluegreen;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $bluegreen;
+			}
+		}
+	}
+}
+.yellow {
+	h2.list-header {
+		span {
+			background: $yellow;
+		}
+	}
+	.list {
+		&.headersonly .news-item {
+			&:before {
+				color: $yellow;
+			}
+		}
+	}
+}

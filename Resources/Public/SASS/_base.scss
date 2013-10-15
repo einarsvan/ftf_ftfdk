@@ -69,5 +69,18 @@ $full: 12;
 	content: $content;
 }
 
+/**
+ * Reset lists
+ */
+@mixin reset-list() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li, dd, dt {
+		margin: 0;
+		padding: 0;
+	}
+}
+
 // @import "Icons/*.gif";
 // @include all-Icons-sprites;

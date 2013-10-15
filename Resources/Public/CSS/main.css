@@ -16,6 +16,9 @@
 /**
  * Icons
  */
+/**
+ * Reset lists
+ */
 @font-face {
   font-family: 'FTF';
   src: url("../Fonts/FTF.eot?v=1");
@@ -956,6 +959,112 @@ textarea {
   }
 }
 
+/* line 33, ../SASS/_grids.scss */
+.row {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 37, ../SASS/_grids.scss */
+#main .row {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* line 45, ../SASS/_grids.scss */
+#main.kongres .kongres-for .row,
+#main.kongres .kongres-under .row,
+#main.kongres .kongres-efter .row {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+/* line 47, ../SASS/_grids.scss */
+#main .row .row {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 48, ../SASS/_grids.scss */
+.col {
+  float: left;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  margin-left: 2%;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* line 50, ../SASS/_grids.scss */
+.row .col:first-child {
+  margin-left: 0;
+}
+
+/* line 52, ../SASS/_grids.scss */
+.span_1 {
+  width: 6.5%;
+}
+
+/* line 53, ../SASS/_grids.scss */
+.span_2 {
+  width: 15.0%;
+}
+
+/* line 54, ../SASS/_grids.scss */
+.span_3 {
+  width: 23.5%;
+}
+
+/* line 55, ../SASS/_grids.scss */
+.span_4 {
+  width: 32.0%;
+}
+
+/* line 56, ../SASS/_grids.scss */
+.span_5 {
+  width: 40.5%;
+}
+
+/* line 57, ../SASS/_grids.scss */
+.span_6 {
+  width: 49.0%;
+}
+
+/* line 58, ../SASS/_grids.scss */
+.span_7 {
+  width: 57.5%;
+}
+
+/* line 59, ../SASS/_grids.scss */
+.span_8 {
+  width: 66.0%;
+}
+
+/* line 60, ../SASS/_grids.scss */
+.span_9 {
+  width: 74.5%;
+}
+
+/* line 61, ../SASS/_grids.scss */
+.span_10 {
+  width: 83.0%;
+}
+
+/* line 62, ../SASS/_grids.scss */
+.span_11 {
+  width: 91.5%;
+}
+
+/* line 63, ../SASS/_grids.scss */
+.span_12 {
+  margin-left: 0;
+  width: 100%;
+}
+
 /* Typography */
 /* line 61, ../../../../../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
@@ -1417,14 +1526,14 @@ span.pref::after {
    */
 }
 /* line 8, ../SASS/_boxes.scss */
-.box h2, .box h3 {
+.box h2 {
   font-size: 1.73333em;
   line-height: 1.53846em;
   line-height: 1.33333em;
   font-family: "Proxima N W01 Reg", Arial, sans-serif;
 }
 /* line 13, ../SASS/_boxes.scss */
-.box h2:before, .box h3:before {
+.box h2:before {
   font-family: 'FTF';
   speak: none;
   font-style: normal;
@@ -1482,43 +1591,89 @@ span.pref::after {
 /**
  * Box colors
  */
-/* line 68, ../SASS/_boxes.scss */
-.blue {
+/* line 71, ../SASS/_boxes.scss */
+.ftfblue,
+.blue,
+.black,
+.bluegrey {
   background: #2cd4e8;
 }
-/* line 70, ../SASS/_boxes.scss */
-.blue h2, .blue h3, .blue p, .blue li {
+/* line 73, ../SASS/_boxes.scss */
+.ftfblue h2, .ftfblue h3, .ftfblue p, .ftfblue li,
+.blue h2,
+.blue h3,
+.blue p,
+.blue li,
+.black h2,
+.black h3,
+.black p,
+.black li,
+.bluegrey h2,
+.bluegrey h3,
+.bluegrey p,
+.bluegrey li {
   color: white;
 }
 
-/* line 76, ../SASS/_boxes.scss */
-.bluegrey {
-  background: #93a4b0;
-}
-/* line 78, ../SASS/_boxes.scss */
-.bluegrey h2, .bluegrey h3 {
-  color: white;
+/* line 79, ../SASS/_boxes.scss */
+.blue {
+  background: #13a7d7;
 }
 
 /* line 83, ../SASS/_boxes.scss */
+.black {
+  background: black;
+}
+
+/* line 87, ../SASS/_boxes.scss */
+.orange {
+  background: #ff862b;
+}
+
+/* line 91, ../SASS/_boxes.scss */
+.green {
+  background: #84c708;
+}
+
+/* line 95, ../SASS/_boxes.scss */
+.red {
+  background: #fd5555;
+}
+
+/* line 99, ../SASS/_boxes.scss */
+.yellow {
+  background: #ffbe00;
+}
+
+/* line 103, ../SASS/_boxes.scss */
+.bluegrey {
+  background: #93a4b0;
+}
+
+/* line 107, ../SASS/_boxes.scss */
 .lightgrey {
   background: #f0f4f6;
 }
 
-/* line 87, ../SASS/_boxes.scss */
+/* line 111, ../SASS/_boxes.scss */
+.bluegreen {
+  background: #6ccfb2;
+}
+
+/* line 115, ../SASS/_boxes.scss */
 .darkgrey {
   background: #1f2328;
 }
-/* line 89, ../SASS/_boxes.scss */
+/* line 117, ../SASS/_boxes.scss */
 .darkgrey h2, .darkgrey h3 {
   color: #2cd4e8;
 }
-/* line 92, ../SASS/_boxes.scss */
+/* line 120, ../SASS/_boxes.scss */
 .darkgrey p, .darkgrey li {
   color: #d2d2d2;
 }
 
-/* line 97, ../SASS/_boxes.scss */
+/* line 125, ../SASS/_boxes.scss */
 .newsletter {
   padding: 45px 30px 30px;
   margin-bottom: 20px;
@@ -1526,14 +1681,14 @@ span.pref::after {
   *zoom: 1;
 }
 
-/* line 101, ../SASS/_boxes.scss */
+/* line 129, ../SASS/_boxes.scss */
 .span_4 .newsletter,
 .span_6 .newsletter {
   padding: 30px;
   margin-bottom: 0;
 }
 
-/* line 103, ../SASS/_boxes.scss */
+/* line 131, ../SASS/_boxes.scss */
 .newsletter h2 {
   float: left;
   font: 52px/54px "Proxima N W01 Light", sans-serif;
@@ -1542,7 +1697,7 @@ span.pref::after {
   max-width: 50%;
 }
 
-/* line 105, ../SASS/_boxes.scss */
+/* line 133, ../SASS/_boxes.scss */
 .span_4 .newsletter h2,
 .span_6 .newsletter h2 {
   float: none;
@@ -1552,14 +1707,14 @@ span.pref::after {
   max-width: none;
 }
 
-/* line 107, ../SASS/_boxes.scss */
+/* line 135, ../SASS/_boxes.scss */
 .newsletter .content {
   float: right;
   width: 45%;
   margin-top: 20px;
 }
 
-/* line 109, ../SASS/_boxes.scss */
+/* line 137, ../SASS/_boxes.scss */
 .span_4 .newsletter .content,
 .span_6 .newsletter .content {
   float: none;
@@ -1567,7 +1722,7 @@ span.pref::after {
   margin-top: 0;
 }
 
-/* line 111, ../SASS/_boxes.scss */
+/* line 139, ../SASS/_boxes.scss */
 .newsletter p {
   font-size: 20px;
   line-height: 24px;
@@ -1575,14 +1730,14 @@ span.pref::after {
   text-align: right;
 }
 
-/* line 113, ../SASS/_boxes.scss */
+/* line 141, ../SASS/_boxes.scss */
 .span_4 .newsletter p,
 .span_6 .newsletter p {
   margin: 0 0 15px;
   text-align: left;
 }
 
-/* line 117, ../SASS/_boxes.scss */
+/* line 145, ../SASS/_boxes.scss */
 .newsletter input[type="text"],
 .newsletter input[type="email"],
 .newsletter input[type="submit"] {
@@ -1598,13 +1753,13 @@ span.pref::after {
   font-size: 18px;
 }
 
-/* line 118, ../SASS/_boxes.scss */
+/* line 146, ../SASS/_boxes.scss */
 .newsletter input[type="submit"] {
   color: #fff;
   background: #5d686f;
 }
 
-/* line 122, ../SASS/_boxes.scss */
+/* line 150, ../SASS/_boxes.scss */
 .span_4 .newsletter input[type="text"], .span_6 .newsletter input[type="text"],
 .span_4 .newsletter input[type="email"], .span_6 .newsletter input[type="email"],
 .span_4 .newsletter input[type="submit"], .span_6 .newsletter input[type="submit"] {
@@ -1612,12 +1767,12 @@ span.pref::after {
   width: 100%;
 }
 
-/* line 124, ../SASS/_boxes.scss */
+/* line 152, ../SASS/_boxes.scss */
 .newsletter .checkboxes {
   margin-bottom: 20px;
 }
 
-/* line 125, ../SASS/_boxes.scss */
+/* line 153, ../SASS/_boxes.scss */
 .newsletter .checkboxes input {
   vertical-align: top;
   margin-top: 2px;
@@ -1797,57 +1952,540 @@ article a {
   color: #1d8b98;
 }
 /* line 128, ../SASS/_article.scss */
+article .link-item a {
+  line-height: 1.6;
+}
+/* line 131, ../SASS/_article.scss */
 article .link-item:before {
   content: "Læs også";
   background: #8b8b8b;
   color: white;
-  padding: 4px 5px;
-  font-size: 12px;
-  line-height: 21px;
-  margin-right: 5px;
+  padding: 6px 6px 4px;
+  margin-right: 8px;
 }
-/* line 146, ../SASS/_article.scss */
+/* line 149, ../SASS/_article.scss */
 article .box.small {
   float: right;
   width: 40%;
   margin: 0 0 1em 1em;
 }
-/* line 156, ../SASS/_article.scss */
+/* line 159, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 {
   background: #93a4b0;
 }
-/* line 159, ../SASS/_article.scss */
+/* line 162, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 ul {
   padding: 2em 1em;
 }
-/* line 161, ../SASS/_article.scss */
+/* line 164, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 ul:before {
   content: "Emneord";
   background: #8b8b8b;
   color: white;
-  padding: 4px 5px;
-  font-size: 12px;
-  line-height: 21px;
-  margin-right: 5px;
+  padding: 6px 6px 4px;
+  margin-right: 8px;
 }
-/* line 171, ../SASS/_article.scss */
+/* line 174, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 li {
   display: inline-block;
   padding: 0;
 }
-/* line 175, ../SASS/_article.scss */
-article .tx-lfttnewscatlinks-pi1 li a {
-  color: black;
-}
 /* line 178, ../SASS/_article.scss */
+article .tx-lfttnewscatlinks-pi1 li a {
+  display: block;
+  color: black;
+  padding: 6px 6px 4px;
+}
+/* line 182, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 li a:after {
   content: ",";
 }
-/* line 181, ../SASS/_article.scss */
+/* line 186, ../SASS/_article.scss */
+article .tx-lfttnewscatlinks-pi1 li:first-child a {
+  padding-left: 0;
+}
+/* line 189, ../SASS/_article.scss */
 article .tx-lfttnewscatlinks-pi1 li:last-child a:after {
   content: "";
 }
 
+/**
+ * Lists
+ */
+/* line 7, ../SASS/_lists.scss */
+.list .byline {
+  display: block;
+  color: #a2a2a2;
+  margin: 0 0 1em;
+  font-size: 0.8em;
+  line-height: 1.66667em;
+}
+/* line 13, ../SASS/_lists.scss */
+.list img {
+  margin-bottom: 1em;
+}
+/* line 16, ../SASS/_lists.scss */
+.list h2 {
+  color: #313131;
+}
+/* line 19, ../SASS/_lists.scss */
+.list h3 {
+  font-size: 1em;
+  line-height: 1.33333em;
+  font-family: "Proxima N W01 Reg", Arial, sans-serif;
+  color: black;
+  margin: 0 0 1em;
+}
+/* line 25, ../SASS/_lists.scss */
+.list .subheader p {
+  margin: 0 0 10px;
+}
+/* line 27, ../SASS/_lists.scss */
+.list .subheader p:last-child {
+  margin: 0;
+}
+/* line 31, ../SASS/_lists.scss */
+.list span.date {
+  font-size: 0.8em;
+  line-height: 1.66667em;
+  color: #a2a2a2;
+}
+/* line 37, ../SASS/_lists.scss */
+.list .noimage img,
+.list .nosub .subheader {
+  display: none;
+}
+/* line 44, ../SASS/_lists.scss */
+.list .black .byline .cat,
+.list .red .byline .cat,
+.list .green .byline .cat,
+.list .lightblue .byline .cat,
+.list .bluegrey .byline .cat {
+  color: #a2a2a2 !important;
+}
+/* line 48, ../SASS/_lists.scss */
+.list .black h2 {
+  color: white;
+}
+/* line 53, ../SASS/_lists.scss */
+.list.headersonly .news-item {
+  position: relative;
+  padding: 10px 60px 0 30px;
+  margin: 0;
+  border-bottom: 1px solid #e5ecef;
+}
+/* line 58, ../SASS/_lists.scss */
+.list.headersonly .news-item:last-child {
+  border: 0;
+}
+/* line 61, ../SASS/_lists.scss */
+.list.headersonly .news-item:before {
+  font-family: 'FTF';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\2192";
+  position: absolute;
+  left: 0px;
+  top: 14px;
+  background: #93a4b0;
+  font-size: 10px;
+  padding: 3px;
+  color: white;
+}
+
+/**
+ * List headers
+ */
+/* line 78, ../SASS/_lists.scss */
+h2.list-header,
+.span_8 h2.list-header {
+  font-size: 1.26667em;
+  line-height: 2.10526em;
+  font-family: "Proxima N W01 Reg", Arial, sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  background: url(../Images/header-lines.png) 0 2px repeat-x;
+}
+/* line 86, ../SASS/_lists.scss */
+h2.list-header span,
+.span_8 h2.list-header span {
+  background: white;
+  display: inline-block;
+  padding-right: 30px;
+}
+/* line 91, ../SASS/_lists.scss */
+h2.list-header:before,
+.span_8 h2.list-header:before {
+  display: none;
+}
+
+/**
+ * UL related
+ */
+/* line 99, ../SASS/_lists.scss */
+ul.related {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+/* line 79, ../SASS/_base.scss */
+ul.related li, ul.related dd, ul.related dt {
+  margin: 0;
+  padding: 0;
+}
+/* line 102, ../SASS/_lists.scss */
+ul.related a {
+  display: block;
+  color: #0f0f0f;
+  padding: 3px 0 3px 2px;
+}
+
+/**
+ * Span_8
+ */
+/* line 116, ../SASS/_lists.scss */
+.span_8 .list h2 {
+  margin: 15px 0 20px;
+}
+/* line 119, ../SASS/_lists.scss */
+.span_8 .list .noimage h2 {
+  font-size: 6em;
+  line-height: 1.11111em;
+}
+/* line 124, ../SASS/_lists.scss */
+.span_8 .list .black ul.related li a {
+  color: white;
+}
+/* line 131, ../SASS/_lists.scss */
+.span_8 ul.related li a {
+  padding: 12px 0 11px 2px;
+  border-bottom: 1px solid #3e3e3e;
+}
+/* line 136, ../SASS/_lists.scss */
+.span_8 ul.related li:first-child a,
+.span_8 ul.related li:nth-child(2) a {
+  font-size: 1.46667em;
+  line-height: 1.81818em;
+  padding-bottom: 0.5em;
+}
+
+/* Light blue list-header */
+/* line 148, ../SASS/_lists.scss */
+.lightblue h2.list-header {
+  background-image: url(../Images/header-lines-greybg.png);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 153, ../SASS/_lists.scss */
+.lightblue h2.list-header span {
+  background: #f0f4f6;
+}
+
+/* line 160, ../SASS/_lists.scss */
+.bluegrey h2.list-header {
+  background-image: url(../Images/headerlines-whitetrans.gif);
+  color: white;
+}
+/* line 163, ../SASS/_lists.scss */
+.bluegrey h2.list-header span {
+  background: #93a4b0;
+}
+/* line 168, ../SASS/_lists.scss */
+.bluegrey .list span.date {
+  color: #2b2b2b;
+}
+/* line 171, ../SASS/_lists.scss */
+.bluegrey .list.headersonly .news-item {
+  border-color: #2b2b2b;
+}
+/* line 173, ../SASS/_lists.scss */
+.bluegrey .list.headersonly .news-item:before {
+  background: #2b2b2b;
+}
+
+/* line 187, ../SASS/_lists.scss */
+.ftfblue h2.list-header,
+.blue h2.list-header,
+.black h2.list-header,
+.orange h2.list-header,
+.red h2.list-header,
+.green h2.list-header,
+.bluegreen h2.list-header,
+.yellow h2.list-header {
+  background-image: url(../Images/headerlines-whitetrans.gif);
+  color: white;
+}
+/* line 190, ../SASS/_lists.scss */
+.ftfblue h2.list-header span,
+.blue h2.list-header span,
+.black h2.list-header span,
+.orange h2.list-header span,
+.red h2.list-header span,
+.green h2.list-header span,
+.bluegreen h2.list-header span,
+.yellow h2.list-header span {
+  background: #2cd4e8;
+}
+/* line 195, ../SASS/_lists.scss */
+.ftfblue h2 a,
+.ftfblue h3 a,
+.blue h2 a,
+.blue h3 a,
+.black h2 a,
+.black h3 a,
+.orange h2 a,
+.orange h3 a,
+.red h2 a,
+.red h3 a,
+.green h2 a,
+.green h3 a,
+.bluegreen h2 a,
+.bluegreen h3 a,
+.yellow h2 a,
+.yellow h3 a {
+  color: white;
+}
+/* line 199, ../SASS/_lists.scss */
+.ftfblue .list span.date,
+.blue .list span.date,
+.black .list span.date,
+.orange .list span.date,
+.red .list span.date,
+.green .list span.date,
+.bluegreen .list span.date,
+.yellow .list span.date {
+  color: white;
+}
+/* line 202, ../SASS/_lists.scss */
+.ftfblue .list.headersonly .news-item,
+.blue .list.headersonly .news-item,
+.black .list.headersonly .news-item,
+.orange .list.headersonly .news-item,
+.red .list.headersonly .news-item,
+.green .list.headersonly .news-item,
+.bluegreen .list.headersonly .news-item,
+.yellow .list.headersonly .news-item {
+  border-color: white;
+}
+/* line 204, ../SASS/_lists.scss */
+.ftfblue .list.headersonly .news-item:before,
+.blue .list.headersonly .news-item:before,
+.black .list.headersonly .news-item:before,
+.orange .list.headersonly .news-item:before,
+.red .list.headersonly .news-item:before,
+.green .list.headersonly .news-item:before,
+.bluegreen .list.headersonly .news-item:before,
+.yellow .list.headersonly .news-item:before {
+  background: white;
+  color: #2cd4e8;
+}
+
+/* line 213, ../SASS/_lists.scss */
+.blue h2.list-header span {
+  background: #13a7d7;
+}
+/* line 219, ../SASS/_lists.scss */
+.blue .list.headersonly .news-item:before {
+  color: #13a7d7;
+}
+
+/* line 227, ../SASS/_lists.scss */
+.black h2.list-header span {
+  background: black;
+}
+/* line 233, ../SASS/_lists.scss */
+.black .list.headersonly .news-item:before {
+  color: black;
+}
+
+/* line 241, ../SASS/_lists.scss */
+.orange h2.list-header span {
+  background: #ff862b;
+}
+/* line 247, ../SASS/_lists.scss */
+.orange .list.headersonly .news-item:before {
+  color: #ff862b;
+}
+
+/* line 255, ../SASS/_lists.scss */
+.red h2.list-header span {
+  background: #fd5555;
+}
+/* line 261, ../SASS/_lists.scss */
+.red .list.headersonly .news-item:before {
+  color: #fd5555;
+}
+
+/* line 269, ../SASS/_lists.scss */
+.green h2.list-header span {
+  background: #84c708;
+}
+/* line 275, ../SASS/_lists.scss */
+.green .list.headersonly .news-item:before {
+  color: #84c708;
+}
+
+/* line 283, ../SASS/_lists.scss */
+.bluegreen h2.list-header span {
+  background: #6ccfb2;
+}
+/* line 289, ../SASS/_lists.scss */
+.bluegreen .list.headersonly .news-item:before {
+  color: #6ccfb2;
+}
+
+/* line 297, ../SASS/_lists.scss */
+.yellow h2.list-header span {
+  background: #ffbe00;
+}
+/* line 303, ../SASS/_lists.scss */
+.yellow .list.headersonly .news-item:before {
+  color: #ffbe00;
+}
+
+/**
+ * Footer
+ */
+/* line 4, ../SASS/_footer.scss */
+#footer {
+  padding-top: 50px;
+  background: #282828;
+  color: white;
+  clear: both;
+  /* Slogan */
+  /* 23px */
+  /* Contactpersons */
+  /* Address */
+}
+/* line 11, ../SASS/_footer.scss */
+#footer .slogan {
+  padding: 0 0 60px 0;
+  font-weight: normal;
+  color: #15d1e8;
+  /* 46px */
+}
+/* line 15, ../SASS/_footer.scss */
+#footer .slogan p {
+  font-size: 1.53333em;
+  line-height: 1.73913em;
+  margin: 0 320px 0 0;
+}
+/* line 19, ../SASS/_footer.scss */
+#footer .slogan .big {
+  font-size: 3.06667em;
+  line-height: 1.30435em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  color: white;
+  margin: 0 130px 30px 0;
+}
+/* line 29, ../SASS/_footer.scss */
+#footer .contact-person {
+  background: #202020;
+  padding: 20px 9%;
+}
+/* line 32, ../SASS/_footer.scss */
+#footer .contact-person img {
+  float: left;
+  margin-right: 20px;
+}
+/* line 36, ../SASS/_footer.scss */
+#footer .contact-person ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+/* line 43, ../SASS/_footer.scss */
+#footer .contact-person p {
+  margin: 0;
+}
+/* line 49, ../SASS/_footer.scss */
+#footer address {
+  border-top: 1px solid #333;
+  margin-top: 35px;
+  padding: 20px 0 80px;
+}
+/* line 53, ../SASS/_footer.scss */
+#footer address .logo {
+  float: left;
+  width: 75px;
+  margin: 0 20px 0 0;
+}
+/* line 54, ../SASS/_footer.scss */
+#footer address p {
+  float: left;
+  display: inline-block;
+  color: #777;
+  font-style: normal;
+  margin: 0;
+  line-height: 30px;
+}
+/* line 56, ../SASS/_footer.scss */
+#footer address .socialmedia {
+  float: right;
+}
+/* line 58, ../SASS/_footer.scss */
+#footer address .socialmedia ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 79, ../SASS/_base.scss */
+#footer address .socialmedia ul li, #footer address .socialmedia ul dd, #footer address .socialmedia ul dt {
+  margin: 0;
+  padding: 0;
+}
+/* line 60, ../SASS/_footer.scss */
+#footer address .socialmedia ul li {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: top;
+}
+/* line 65, ../SASS/_footer.scss */
+#footer address .socialmedia ul a {
+  display: block;
+  line-height: 30px;
+  color: #777;
+  font-size: 26px;
+}
+/* line 70, ../SASS/_footer.scss */
+#footer address .socialmedia ul a.bentesblog {
+  font-weight: bold;
+  font-size: 32px;
+}
+/* line 73, ../SASS/_footer.scss */
+#footer address .socialmedia ul a.bentesblog span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 76, ../SASS/_footer.scss */
+#footer address .socialmedia ul a.bentesblog:after {
+  content: "B";
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 83, ../SASS/_footer.scss */
+#footer address .socialmedia ul a:hover {
+  text-decoration: none;
+}
+
+/* Basic html modules: buttons, tables, forms etc. */
 /**
  * Kurser-box
  */
@@ -2064,5 +2702,3 @@ article .tx-lfttnewscatlinks-pi1 li:last-child a:after {
   width: 14px;
   height: 13px;
 }
-
-/* Basic html modules: buttons, tables, forms etc. */

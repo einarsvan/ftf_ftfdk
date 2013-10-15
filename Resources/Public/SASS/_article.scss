@@ -125,14 +125,17 @@ article {
 
 	}
 	.link-item {
+		a {
+			line-height: 1.6;
+		}
 		&:before {
 			content: "Læs også";
 			background: #8b8b8b;
 			color: white;
-			padding: 4px 5px;
-			font-size: 12px;
-			line-height: 21px;
-			margin-right: 5px;
+			padding: 6px 6px 4px;
+			// font-size: 12px;
+			// line-height: 21px;
+			margin-right: 8px;
 		}
 
 	}
@@ -162,10 +165,10 @@ article {
 				content: "Emneord";
 				background: #8b8b8b;
 				color: white;
-				padding: 4px 5px;
-				font-size: 12px;
-				line-height: 21px;
-				margin-right: 5px;
+				padding: 6px 6px 4px;
+				// font-size: 12px;
+				// line-height: 21px;
+				margin-right: 8px;
 			}
 		}
 		li {
@@ -173,10 +176,15 @@ article {
 			padding: 0;
 			
 			a {
+				display: block;
 				color: black;
+				padding: 6px 6px 4px;
+				&:after{
+					content:",";
+				}
 			}
-			a:after{
-				content:",";
+			&:first-child a{
+				padding-left: 0;
 			}
 			&:last-child a:after{
 				content:"";

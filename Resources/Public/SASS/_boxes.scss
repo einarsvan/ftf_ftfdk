@@ -5,7 +5,7 @@
 .box {
 	padding: 30px;
 
-	h2,h3 {
+	h2 {
 		@include adjust-font-size-to(26px);
 		@include adjust-leading-to(1);
 		font-family: $sans;
@@ -65,7 +65,10 @@
 /**
  * Box colors
  */
-.blue {
+.ftfblue,
+.blue,
+.black,
+.bluegrey {
 	background: $ftfblue;
 	h2,h3,p,li {
 		color: white;
@@ -73,15 +76,40 @@
 
 }
 
+.blue {
+	background: $blue;
+}
+
+.black {
+	background: black;
+}
+
+.orange {
+	background: $orange;
+}
+
+.green {
+	background: $green;
+}
+
+.red {
+	background: $red;
+}
+
+.yellow {
+	background: $yellow;
+}
+
 .bluegrey {
 	background: $bluegrey;
-	h2,h3 {
-		color: white;	
-	}
 }
 
 .lightgrey {
 	background: #f0f4f6;
+}
+
+.bluegreen {
+	background: $bluegreen;
 }
 
 .darkgrey {
